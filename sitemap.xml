@@ -113,4 +113,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://sladent.com/en/contact.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sladent.com/contact.html"/>
   </url>
+  <url>
+    <loc>https://sladent.com/kids/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
