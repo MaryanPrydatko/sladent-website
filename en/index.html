@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../images/icon.ico">
   <link rel="apple-touch-icon" href="../images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="../fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../site.css">
   <link rel="preload" as="image" href="../images/photos/team-sofa.jpg" imagesrcset="../images/photos/team-sofa-800.jpg 800w, ../images/photos/team-sofa-1400.jpg 1400w, ../images/photos/team-sofa.jpg 2400w" imagesizes="(max-width: 1400px) 100vw, 1300px" fetchpriority="high">
   <script>document.documentElement.classList.add('js')</script>
@@ -181,24 +181,24 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <div class="hero__top">
-      <h1 class="d1 rv" id="hero-title">Whole families come here.</h1>
-      <div class="rv">
+      <h1 class="d1" id="hero-title">Whole families come here.</h1>
+      <div>
         <p class="lead">The Prydatko family dental clinic in Ternopil since 2008. Adults and children, from a first check-up to implants.</p>
         <div class="hero__cta"><a class="btn btn--red" href="contact.html#booking-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg>Book an appointment</a><a class="btn btn--soft" href="tel:+380979351535"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.96.4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.85.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>+380 97 935 15 35</a></div>
       </div>
     </div>
-    <div class="media hero__media rv">
-      <img src="../images/photos/team-sofa.jpg" srcset="../images/photos/team-sofa-800.jpg 800w, ../images/photos/team-sofa-1400.jpg 1400w, ../images/photos/team-sofa.jpg 2400w" sizes="(max-width: 1400px) 100vw, 1300px" width="2400" height="1600" alt="The Sladent team: doctors, assistants, nurses and administrators at the clinic" fetchpriority="high">
+    <div class="media hero__media" style="background-color:#aba49e">
+      <img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/team-sofa.jpg" srcset="../images/photos/team-sofa-800.jpg 800w, ../images/photos/team-sofa-1400.jpg 1400w, ../images/photos/team-sofa.jpg 2400w" sizes="(max-width: 1400px) 100vw, 1300px" width="2400" height="1600" alt="The Sladent team: doctors, assistants, nurses and administrators at the clinic" fetchpriority="high">
       <div class="hero__chips">
         <a class="chip" href="reviews.html"><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><span>4.8 <small>· 93 Google reviews</small></span></a>
         <span class="chip"><span data-status>Mon–Fri 9:00–20:00</span></span>
       </div>
     </div>
     <div class="facts">
-      <div class="fact rv"><b>2008</b><span>the year the Prydatko family opened the clinic</span></div>
-      <div class="fact rv"><b>4.8</b><span>average rating from 93 Google reviews</span></div>
-      <div class="fact rv"><b>until 8 pm</b><span>on weekdays, and until 3 pm on Saturday</span></div>
-      <div class="fact rv"><b>age 3+</b><span>we treat children, with games and cartoons while you wait</span></div>
+      <div class="fact"><b>2008</b><span>the year the Prydatko family opened the clinic</span></div>
+      <div class="fact"><b>4.8</b><span>average rating from 93 Google reviews</span></div>
+      <div class="fact"><b>until 8 pm</b><span>on weekdays, and until 3 pm on Saturday</span></div>
+      <div class="fact"><b>age 3+</b><span>we treat children, with games and cartoons while you wait</span></div>
     </div>
   </div>
 </section>
@@ -206,20 +206,20 @@
 <section class="sec" aria-labelledby="svc-title">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="svc-title">From check-ups to new teeth</h2>
-      <p class="rv">Treatment, aesthetics, orthodontics and implants in one clinic, with doctors who know your history.</p>
+      <h2 class="d2" id="svc-title">From check-ups to new teeth</h2>
+      <p>Treatment, aesthetics, orthodontics and implants in one clinic, with doctors who know your history.</p>
     </div>
     <div class="bento">
-      <a class="tile tile--photo rv" href="services.html#implants">
-        <img src="../videos/surgery-poster.jpg" width="720" height="1280" alt="Sladent surgeons placing an implant" loading="lazy">
+      <a class="tile tile--photo" href="services.html#implants" style="background-color:#6f706f">
+        <img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../videos/surgery-poster.jpg" width="720" height="1280" alt="Sladent surgeons placing an implant" loading="lazy">
         <h3>Implants</h3><p>From a single tooth to a full arch on six implants.</p><span class="arrow arrow--light">Learn more</span>
       </a>
-      <a class="tile rv" href="services.html#cosmetic"><h3>Aesthetics</h3><p>Magic Smile whitening, veneers, zirconia crowns.</p><span class="arrow">Learn more</span></a>
-      <a class="tile rv" href="services.html#general"><h3>Fillings and root canals</h3><p>Cavities, fillings, root canals, rebuilding a broken tooth.</p><span class="arrow">Learn more</span></a>
-      <a class="tile rv" href="services.html#orthodontics"><h3>Orthodontics</h3><p>Braces and aligners for children and adults.</p><span class="arrow">Learn more</span></a>
-      <a class="tile rv" href="services.html#pediatric"><h3>Children</h3><p>From age three, calmly and without fear.</p><span class="arrow">Learn more</span></a>
-      <a class="tile rv" href="services.html#hygiene"><h3>Hygiene</h3><p>Professional cleaning and gum care.</p><span class="arrow">Learn more</span></a>
-      <a class="tile tile--wide tile--red rv" href="contact.html#booking-form"><h3>Not sure where to start?</h3><p>Book a check-up. The doctor will explain what you need and make a treatment plan.</p><span class="arrow">Book a check-up</span></a>
+      <a class="tile" href="services.html#cosmetic"><h3>Aesthetics</h3><p>Magic Smile whitening, veneers, zirconia crowns.</p><span class="arrow">Learn more</span></a>
+      <a class="tile" href="services.html#general"><h3>Fillings and root canals</h3><p>Cavities, fillings, root canals, rebuilding a broken tooth.</p><span class="arrow">Learn more</span></a>
+      <a class="tile" href="services.html#orthodontics"><h3>Orthodontics</h3><p>Braces and aligners for children and adults.</p><span class="arrow">Learn more</span></a>
+      <a class="tile" href="services.html#pediatric"><h3>Children</h3><p>From age three, calmly and without fear.</p><span class="arrow">Learn more</span></a>
+      <a class="tile" href="services.html#hygiene"><h3>Hygiene</h3><p>Professional cleaning and gum care.</p><span class="arrow">Learn more</span></a>
+      <a class="tile tile--wide tile--red" href="contact.html#booking-form"><h3>Not sure where to start?</h3><p>Book a check-up. The doctor will explain what you need and make a treatment plan.</p><span class="arrow">Book a check-up</span></a>
     </div>
   </div>
 </section>
@@ -227,13 +227,13 @@
 <section class="sec sec--tone" aria-labelledby="res-title">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="res-title">Our patients’ results</h2>
-      <p class="rv">Photos from our <a class="arrow" href="https://www.instagram.com/sladent_dentistry_ternopil/" rel="noopener" target="_blank">Instagram</a>, before and after treatment.</p>
+      <h2 class="d2" id="res-title">Our patients’ results</h2>
+      <p>Photos from our <a class="arrow" href="https://www.instagram.com/sladent_dentistry_ternopil/" rel="noopener" target="_blank">Instagram</a>, before and after treatment.</p>
     </div>
-    <figure class="rv" style="margin:0">
+    <figure style="margin:0">
       <div class="ba">
-        <img src="../images/photos/whitening-before.jpg" width="1200" height="984" loading="lazy" alt="Teeth before whitening, with yellowish enamel">
-        <img class="ba__after" src="../images/photos/whitening-after.jpg" width="1200" height="984" loading="lazy" alt="The same teeth after Magic Smile whitening">
+        <img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/whitening-before.jpg" width="1200" height="984" loading="lazy" alt="Teeth before whitening, with yellowish enamel">
+        <img class="ba__after fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/whitening-after.jpg" width="1200" height="984" loading="lazy" alt="The same teeth after Magic Smile whitening">
         <span class="chip chip--l" aria-hidden="true">Before</span><span class="chip chip--r" aria-hidden="true">After</span>
         <span class="ba__line" aria-hidden="true"></span><span class="ba__knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#111215" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></span>
         <input type="range" min="0" max="100" value="50" aria-label="Compare before and after whitening">
@@ -241,9 +241,9 @@
       <figcaption class="cap"><b>Magic Smile whitening in one visit.</b> Drag the slider to compare.</figcaption>
     </figure>
     <div class="results">
-      <figure class="result rv"><div class="media"><img src="../images/photos/case-crowns.jpg" width="1000" height="790" loading="lazy" alt="Zirconia crowns on a jaw model"></div><figcaption class="cap"><b>7 implants and 19 zirconia crowns.</b> Treatment took a year.</figcaption></figure>
-      <figure class="result rv"><div class="media"><img src="../images/photos/case-allon6-xray.jpg" width="900" height="1200" loading="lazy" alt="X-ray: a full arch on six implants"></div><figcaption class="cap"><b>A full arch on six implants.</b> The temporary bridge went in a week after surgery.</figcaption></figure>
-      <figure class="result rv"><div class="media"><img src="../images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="A smile after old crowns were replaced with zirconia"></div><figcaption class="cap"><b>New zirconia crowns.</b> The natural teeth were whitened to match.</figcaption></figure>
+      <figure class="result"><div class="media" style="background-color:#a6a090"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/case-crowns.jpg" width="1000" height="790" loading="lazy" alt="Zirconia crowns on a jaw model"></div><figcaption class="cap"><b>7 implants and 19 zirconia crowns.</b> Treatment took a year.</figcaption></figure>
+      <figure class="result"><div class="media" style="background-color:#7a7976"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/case-allon6-xray.jpg" width="900" height="1200" loading="lazy" alt="X-ray: a full arch on six implants"></div><figcaption class="cap"><b>A full arch on six implants.</b> The temporary bridge went in a week after surgery.</figcaption></figure>
+      <figure class="result"><div class="media" style="background-color:#977a6f"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="A smile after old crowns were replaced with zirconia"></div><figcaption class="cap"><b>New zirconia crowns.</b> The natural teeth were whitened to match.</figcaption></figure>
     </div>
   </div>
 </section>
@@ -252,43 +252,43 @@
   <div class="wrap">
     <div class="reviews-top">
       <div>
-        <h2 class="d2 rv" id="rev-title">Patients come back for years.</h2>
-        <div class="score rv"><b>4.8</b><div><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><small>93 Google reviews</small></div></div>
+        <h2 class="d2" id="rev-title">Patients come back for years.</h2>
+        <div class="score"><b>4.8</b><div><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><small>93 Google reviews</small></div></div>
       </div>
-      <blockquote class="quote rv"><p>I have been a patient of Dr. Yaroslav Prydatko since the 1990s. For a dentist I will always come back to SLADENT.</p><footer>Oleh B. · Google review, translated from Ukrainian</footer></blockquote>
+      <blockquote class="quote"><p>I have been a patient of Dr. Yaroslav Prydatko since the 1990s. For a dentist I will always come back to SLADENT.</p><footer>Oleh B. · Google review, translated from Ukrainian</footer></blockquote>
     </div>
   </div>
-  <div class="marquee rv" aria-label="Patient reviews from Google"><div class="marquee__row" style="--dur:80s"><figure class="rcard"><p>Trusted by our whole family for more than a decade. Sincerely recommend.</p><footer><b>Tati B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I liked the convenient hours (they see patients until 8 pm) and that you don't wait weeks for an appointment (1 to 2 days).</p><footer><b>Sviatoslav B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Today they treated a tooth for our 4-year-old son. Many thanks to Dr. Sofiia Romanivna and the assistant for the professional work and the good mood!</p><footer><b>Ivan M.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Our whole family has been coming here for about 10 years. We are happy with everything. The price matches the quality.</p><footer><b>Valia S.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>The doctor explains everything in detail, works very carefully and earns complete trust.</p><footer><b>Svitlana R.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I had 8 teeth done there, 4 of them without anaesthesia. Afterwards they advised me how to look after my teeth.</p><footer><b>Yana D.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>As always, professional care, a personal approach and quality work. Our whole family has been coming here for more than 10 years.</p><footer><b>Yelyzaveta N.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure></div><div class="marquee__row marquee__row--rev" style="--dur:90s"><figure class="rcard"><p>I was a little nervous before the implant, but thanks to your experience and well-coordinated work it went calmly and much easier than I expected.</p><footer><b>Implant patient</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Svitlana Karlivna is a wonderful doctor with great experience, a true professional.</p><footer><b>Yuliia Ch.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I had my teeth whitened at SlaDent and it went great. The result is excellent.</p><footer><b>Sergii K.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Professional doctors and friendly staff. Iryna Vasylivna is a wonderful doctor!</p><footer><b>Liudmyla K.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I have been coming to Sladent for 5 years and recommend it to my friends and family.</p><footer><b>Liuba P.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>A good clinic. Friendly staff, experienced specialists, a pleasant atmosphere and fair prices.</p><footer><b>Viktor M.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Trusted by our whole family for more than a decade. Sincerely recommend.</p><footer><b>Tati B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure></div></div>
-  <div class="wrap" style="margin-top:2rem"><a class="arrow rv" href="reviews.html">All reviews</a><p class="small muted" style="margin-top:.75rem">Reviews translated from Ukrainian.</p></div>
+  <div class="rrow-wrap"><div class="rrow" tabindex="0" role="region" aria-label="Patient reviews from Google"><figure class="rcard"><p>Trusted by our whole family for more than a decade. Sincerely recommend.</p><footer><b>Tati B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I liked the convenient hours (they see patients until 8 pm) and that you don't wait weeks for an appointment (1 to 2 days).</p><footer><b>Sviatoslav B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Today they treated a tooth for our 4-year-old son. Many thanks to Dr. Sofiia Romanivna and the assistant for the professional work and the good mood!</p><footer><b>Ivan M.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Our whole family has been coming here for about 10 years. We are happy with everything. The price matches the quality.</p><footer><b>Valia S.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>The doctor explains everything in detail, works very carefully and earns complete trust.</p><footer><b>Svitlana R.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I had 8 teeth done there, 4 of them without anaesthesia. Afterwards they advised me how to look after my teeth.</p><footer><b>Yana D.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>As always, professional care, a personal approach and quality work. Our whole family has been coming here for more than 10 years.</p><footer><b>Yelyzaveta N.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I was a little nervous before the implant, but thanks to your experience and well-coordinated work it went calmly and much easier than I expected.</p><footer><b>Implant patient</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Svitlana Karlivna is a wonderful doctor with great experience, a true professional.</p><footer><b>Yuliia Ch.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I had my teeth whitened at SlaDent and it went great. The result is excellent.</p><footer><b>Sergii K.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Professional doctors and friendly staff. Iryna Vasylivna is a wonderful doctor!</p><footer><b>Liudmyla K.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>I have been coming to Sladent for 5 years and recommend it to my friends and family.</p><footer><b>Liuba P.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>A good clinic. Friendly staff, experienced specialists, a pleasant atmosphere and fair prices.</p><footer><b>Viktor M.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure></div><div class="wrap rrow-foot"><span class="small muted">Swipe for more</span><div class="rrow-nav"><button type="button" aria-label="Previous reviews">←</button><button type="button" aria-label="Next reviews">→</button></div></div></div>
+  <div class="wrap" style="margin-top:2rem"><a class="arrow" href="reviews.html">All reviews</a><p class="small muted" style="margin-top:.75rem">Reviews translated from Ukrainian.</p></div>
 </section>
 
 <section class="sec sec--tone" aria-labelledby="doc-title">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="doc-title">The Prydatko family of dentists</h2>
-      <p class="rv">Dr. Yaroslav Prydatko opened the clinic in 2008. Today Dr. Yurii Prydatko and Dr. Svitlana Prydatko work alongside him.</p>
+      <h2 class="d2" id="doc-title">The Prydatko family of dentists</h2>
+      <p>Dr. Yaroslav Prydatko opened the clinic in 2008. Today Dr. Yurii Prydatko and Dr. Svitlana Prydatko work alongside him.</p>
     </div>
     <div class="people">
-      <article class="person rv"><div class="media"><img src="../images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yaroslav Prydatko"></div><h3>Yaroslav Prydatko</h3><p class="role">Founder and head doctor</p><blockquote>The doctor explains everything in detail, works very carefully and earns complete trust.<footer>Svitlana R., Google review</footer></blockquote></article>
-      <article class="person rv"><div class="media"><img src="../images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yurii Prydatko"></div><h3>Yurii Prydatko</h3><p class="role">Dentist and implant surgeon</p></article>
-      <article class="person rv"><div class="media"><img src="../images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Svitlana Prydatko"></div><h3>Svitlana Prydatko</h3><p class="role">Dentist, also treats children</p><blockquote>Svitlana Karlivna is a wonderful doctor with great experience, a true professional.<footer>Yuliia Ch., Google review</footer></blockquote></article>
+      <article class="person"><div class="media" style="background-color:#8e8278"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yaroslav Prydatko"></div><h3>Yaroslav Prydatko</h3><p class="role">Founder and head doctor</p><blockquote>The doctor explains everything in detail, works very carefully and earns complete trust.<footer>Svitlana R., Google review</footer></blockquote></article>
+      <article class="person"><div class="media" style="background-color:#8e857b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yurii Prydatko"></div><h3>Yurii Prydatko</h3><p class="role">Dentist and implant surgeon</p></article>
+      <article class="person"><div class="media" style="background-color:#877c71"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Svitlana Prydatko"></div><h3>Svitlana Prydatko</h3><p class="role">Dentist, also treats children</p><blockquote>Svitlana Karlivna is a wonderful doctor with great experience, a true professional.<footer>Yuliia Ch., Google review</footer></blockquote></article>
     </div>
-    <p class="rv more">Also orthodontist Iryna Hlova, Dr. Iryna Vasylivna, Dr. Sofiia Hapii and a team of assistants, nurses and administrators. <a class="arrow" href="team.html">Meet the team</a></p>
+    <p class="more">Also orthodontist Iryna Hlova, Dr. Iryna Vasylivna, Dr. Sofiia Hapii and a team of assistants, nurses and administrators. <a class="arrow" href="team.html">Meet the team</a></p>
   </div>
 </section>
 
 <section class="sec" aria-labelledby="team-title">
   <div class="wrap split">
-    <div class="media media--video rv" style="aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="../videos/team-poster.jpg" width="720" height="1280" aria-label="The Sladent team at the clinic"><source src="../videos/team.mp4" type="video/mp4"></video></div>
+    <div class="media media--video" style="background-color:#797269;aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="../videos/team-poster.jpg" width="720" height="1280" aria-label="The Sladent team at the clinic"><source src="../videos/team.mp4" type="video/mp4"></video></div>
     <div>
-      <h2 class="d2 rv" id="team-title">A big team that feels like family</h2>
-      <p class="lead rv" style="margin-top:1.25rem">Doctors, assistants, nurses and administrators. Many patients have come with their whole family for years, so we know them by name.</p>
-      <ul class="ticks rv">
+      <h2 class="d2" id="team-title">A big team that feels like family</h2>
+      <p class="lead" style="margin-top:1.25rem">Doctors, assistants, nurses and administrators. Many patients have come with their whole family for years, so we know them by name.</p>
+      <ul class="ticks">
         <li><span><b>No long waits.</b> One patient writes that he waited 1–2 days for an appointment.</span></li>
         <li><span><b>Open until 8 pm</b> on weekdays, so you can come after work.</span></li>
         <li><span><b>We explain everything</b> before treatment and tell you how to care for your teeth afterwards.</span></li>
       </ul>
-      <a class="btn btn--dark rv" href="team.html">Meet the team</a>
+      <a class="btn btn--dark" href="team.html">Meet the team</a>
     </div>
   </div>
 </section>
@@ -296,8 +296,8 @@
 
 <section class="sec sec--tight" aria-labelledby="kids-title">
   <div class="wrap">
-    <div class="kids rv">
-      <a class="media" href="../kids/" tabindex="-1" aria-hidden="true"><img src="../kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt=""></a>
+    <div class="kids">
+      <a class="media" href="../kids/" tabindex="-1" aria-hidden="true" style="background-color:#cfc9d4"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt=""></a>
       <div>
         <h2 class="d2" id="kids-title">Kids like it here</h2>
         <p>We treat children from age three. While you wait, your child can play our games or watch a cartoon about Zubyk the tooth visiting the dentist.</p>
@@ -309,7 +309,7 @@
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Book an appointment</h2>
         <p class="lead">Call us or leave a request on the site and our administrator will find a time that suits you.</p>
@@ -327,10 +327,10 @@
 
 <section class="sec sec--tight" aria-labelledby="place-title">
   <div class="wrap">
-    <h2 class="d2 rv" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">8 Zluky Avenue, Ternopil</h2>
+    <h2 class="d2" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">8 Zluky Avenue, Ternopil</h2>
     <div class="place">
-      <div class="media rv"><img src="../images/photos/clinic-outside.jpg" srcset="../images/photos/clinic-outside-800.jpg 800w, ../images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="The Sladent team outside the clinic at 8 Zluky Avenue"></div>
-      <div class="media rv"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent on the map: 8 Zluky Avenue, Ternopil" allowfullscreen></iframe></div>
+      <div class="media" style="background-color:#6f7461"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/clinic-outside.jpg" srcset="../images/photos/clinic-outside-800.jpg 800w, ../images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="The Sladent team outside the clinic at 8 Zluky Avenue"></div>
+      <div class="media"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent on the map: 8 Zluky Avenue, Ternopil" allowfullscreen></iframe></div>
     </div>
   </div>
 </section>
@@ -338,10 +338,10 @@
 <section class="sec sec--tone" aria-labelledby="faq-title">
   <div class="wrap faq">
     <div>
-      <h2 class="d2 rv" id="faq-title">Questions</h2>
-      <p class="lead rv" style="margin-top:1.25rem">Can’t find the answer? Call us and our administrator will help: <a class="arrow" href="tel:+380979351535">+380 97 935 15 35</a></p>
+      <h2 class="d2" id="faq-title">Questions</h2>
+      <p class="lead" style="margin-top:1.25rem">Can’t find the answer? Call us and our administrator will help: <a class="arrow" href="tel:+380979351535">+380 97 935 15 35</a></p>
     </div>
-    <div class="faq__list"><details class="rv"><summary>Do you accept new patients?</summary><div><p>Yes. Book by phone at <a href="tel:+380979351535">+380 97 935 15 35</a>, through the <a href="contact.html#booking-form">form on this site</a> or at the clinic. The first consultation includes an examination and diagnosis.</p></div></details><details class="rv"><summary>How can I pay?</summary><div><p>Cash, bank cards (Visa, Mastercard) and bank transfer.</p></div></details><details class="rv"><summary>How long does a visit take?</summary><div><p>A consultation takes 30–45 minutes, a professional cleaning about an hour, implants or prosthetics 1.5 to 3 hours.</p></div></details><details class="rv"><summary>Do you treat children?</summary><div><p>Yes, from the age of three. While you wait, your child can play <a href="../kids/">our games or watch a cartoon</a>.</p></div></details><details class="rv"><summary>Is there parking?</summary><div><p>Yes, there is free parking for patients next to the clinic. It is also easy to reach by public transport.</p></div></details><details class="rv"><summary>What should I bring to my first visit?</summary><div><p>An ID and your medical record if you have one. If you have X-rays or reports from other doctors, bring them too.</p></div></details></div>
+    <div class="faq__list"><details><summary>Do you accept new patients?</summary><div><p>Yes. Book by phone at <a href="tel:+380979351535">+380 97 935 15 35</a>, through the <a href="contact.html#booking-form">form on this site</a> or at the clinic. The first consultation includes an examination and diagnosis.</p></div></details><details><summary>How can I pay?</summary><div><p>Cash, bank cards (Visa, Mastercard) and bank transfer.</p></div></details><details><summary>How long does a visit take?</summary><div><p>A consultation takes 30–45 minutes, a professional cleaning about an hour, implants or prosthetics 1.5 to 3 hours.</p></div></details><details><summary>Do you treat children?</summary><div><p>Yes, from the age of three. While you wait, your child can play <a href="../kids/">our games or watch a cartoon</a>.</p></div></details><details><summary>Is there parking?</summary><div><p>Yes, there is free parking for patients next to the clinic. It is also easy to reach by public transport.</p></div></details><details><summary>What should I bring to my first visit?</summary><div><p>An ID and your medical record if you have one. If you have X-rays or reports from other doctors, bring them too.</p></div></details></div>
   </div>
 </section>
 

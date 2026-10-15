@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="images/icon.ico">
   <link rel="apple-touch-icon" href="images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -53,86 +53,86 @@
 <main id="main">
 <section class="phero" aria-labelledby="t">
   <div class="wrap">
-    <h1 class="d1 rv" id="t">Що ми лікуємо</h1>
-    <p class="lead rv">Від профілактичного огляду до повної імплантації. Усе в одній клініці, у лікарів, які знають вашу історію.</p>
-    <nav class="jump rv" aria-label="Розділи сторінки"><a href="#implants">Імплантація</a><a href="#cosmetic">Естетика</a><a href="#general">Лікування зубів</a><a href="#orthodontics">Ортодонтія</a><a href="#pediatric">Дитяча стоматологія</a><a href="#hygiene">Гігієна</a><a href="#more">Протезування і хірургія</a></nav>
+    <h1 class="d1" id="t">Що ми лікуємо</h1>
+    <p class="lead">Від профілактичного огляду до повної імплантації. Усе в одній клініці, у лікарів, які знають вашу історію.</p>
+    <nav class="jump" aria-label="Розділи сторінки"><a href="#implants">Імплантація</a><a href="#cosmetic">Естетика</a><a href="#general">Лікування зубів</a><a href="#orthodontics">Ортодонтія</a><a href="#pediatric">Дитяча стоматологія</a><a href="#hygiene">Гігієна</a><a href="#more">Протезування і хірургія</a></nav>
   </div>
 </section>
 
 <section class="wrap svc" id="implants" aria-labelledby="implants-t">
-  <div class="media media--video rv" style="aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="videos/surgery-poster.jpg" width="720" height="1280" aria-label="Лікарі Sladent під час операції"><source src="videos/surgery.mp4" type="video/mp4"></video></div>
+  <div class="media media--video" style="background-color:#6f706f;aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="videos/surgery-poster.jpg" width="720" height="1280" aria-label="Лікарі Sladent під час операції"><source src="videos/surgery.mp4" type="video/mp4"></video></div>
   <div>
-    <h2 class="d2 rv" id="implants-t">Імплантація зубів</h2>
-    <p class="lead rv">Імпланти замінюють втрачені зуби: від одного зуба до всього ряду. Імплантацією займається хірург Юрій Ярославович Придатко.</p>
-    <ul class="ticks rv"><li><span><b>Один імплант</b> замість одного втраченого зуба</span></li><li><span><b>Кілька імплантів</b>, коли бракує кількох зубів поспіль</span></li><li><span><b>Весь ряд на шести імплантах</b> (All-on-6), коли зубів майже не залишилось</span></li><li><span><b>Кісткова пластика і синус-ліфтинг</b>, коли для імпланта бракує кістки</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Записатися на консультацію</a></div>
-    <blockquote class="note rv">Перед імплантацією трохи хвилювався, але завдяки вашому досвіду, чіткості та злагодженій роботі все пройшло спокійно й значно легше, ніж я очікував.<footer>Пацієнт після імплантації, відгук на Google</footer></blockquote>
+    <h2 class="d2" id="implants-t">Імплантація зубів</h2>
+    <p class="lead">Імпланти замінюють втрачені зуби: від одного зуба до всього ряду. Імплантацією займається хірург Юрій Ярославович Придатко.</p>
+    <ul class="ticks"><li><span><b>Один імплант</b> замість одного втраченого зуба</span></li><li><span><b>Кілька імплантів</b>, коли бракує кількох зубів поспіль</span></li><li><span><b>Весь ряд на шести імплантах</b> (All-on-6), коли зубів майже не залишилось</span></li><li><span><b>Кісткова пластика і синус-ліфтинг</b>, коли для імпланта бракує кістки</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Записатися на консультацію</a></div>
+    <blockquote class="note">Перед імплантацією трохи хвилювався, але завдяки вашому досвіду, чіткості та злагодженій роботі все пройшло спокійно й значно легше, ніж я очікував.<footer>Пацієнт після імплантації, відгук на Google</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc svc--flip" id="cosmetic" aria-labelledby="cosmetic-t">
-  <div class="media rv"><img src="images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="Усмішка після заміни коронок на цирконієві"></div>
+  <div class="media" style="background-color:#977a6f"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="Усмішка після заміни коронок на цирконієві"></div>
   <div>
-    <h2 class="d2 rv" id="cosmetic-t">Естетика і відбілювання</h2>
-    <p class="lead rv">Світліші зуби, рівний колір, нові коронки замість старих. Підбираємо так, щоб результат виглядав природно.</p>
-    <ul class="ticks rv"><li><span><b>Відбілювання Magic Smile</b> за одну процедуру</span></li><li><span><b>Вініри</b> для зміни форми й кольору передніх зубів</span></li><li><span><b>Цирконієві коронки</b> замість старих коронок</span></li><li><span><b>Художня реставрація</b>: старі пломби замінюємо на непомітні</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Записатися на консультацію</a></div>
-    <blockquote class="note rv">Відбілював зуби в стоматології SlaDent, і все пройшло чудово! Результат просто відмінний.<footer>Sergii K., відгук на Google</footer></blockquote>
+    <h2 class="d2" id="cosmetic-t">Естетика і відбілювання</h2>
+    <p class="lead">Світліші зуби, рівний колір, нові коронки замість старих. Підбираємо так, щоб результат виглядав природно.</p>
+    <ul class="ticks"><li><span><b>Відбілювання Magic Smile</b> за одну процедуру</span></li><li><span><b>Вініри</b> для зміни форми й кольору передніх зубів</span></li><li><span><b>Цирконієві коронки</b> замість старих коронок</span></li><li><span><b>Художня реставрація</b>: старі пломби замінюємо на непомітні</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Записатися на консультацію</a></div>
+    <blockquote class="note">Відбілював зуби в стоматології SlaDent, і все пройшло чудово! Результат просто відмінний.<footer>Sergii K., відгук на Google</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc" id="general" aria-labelledby="general-t">
-  <div class="media rv"><img src="images/photos/work-9368.jpg" srcset="images/photos/work-9368-800.jpg 800w, images/photos/work-9368.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" width="1600" height="2133" loading="lazy" alt="Лікарі Sladent під час лікування пацієнта"></div>
+  <div class="media" style="background-color:#67676b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/work-9368.jpg" srcset="images/photos/work-9368-800.jpg 800w, images/photos/work-9368.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" width="1600" height="2133" loading="lazy" alt="Лікарі Sladent під час лікування пацієнта"></div>
   <div>
-    <h2 class="d2 rv" id="general-t">Лікування зубів</h2>
-    <p class="lead rv">Лікуємо карієс і пульпіт, пломбуємо, відновлюємо зруйновані зуби. Спершу огляд і план, потім лікування.</p>
-    <ul class="ticks rv"><li><span><b>Огляд і план лікування</b> на першому прийомі</span></li><li><span><b>Лікування карієсу</b> і пломби</span></li><li><span><b>Лікування каналів</b> і пульпіту, щоб зберегти зуб</span></li><li><span><b>Відновлення форми зуба</b> після руйнування</span></li><li><span><b>Видалення зубів</b>, коли зуб не врятувати</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Записатися на консультацію</a></div>
-    <blockquote class="note rv">Окрема подяка Максиму Петровичу, професіонал своєї справи. Особливо у відновленні форми зубів. Ідеально відновив зуб, крім того все зробив швидко і безболісно.<footer>Святослав Б., відгук на Google</footer></blockquote>
+    <h2 class="d2" id="general-t">Лікування зубів</h2>
+    <p class="lead">Лікуємо карієс і пульпіт, пломбуємо, відновлюємо зруйновані зуби. Спершу огляд і план, потім лікування.</p>
+    <ul class="ticks"><li><span><b>Огляд і план лікування</b> на першому прийомі</span></li><li><span><b>Лікування карієсу</b> і пломби</span></li><li><span><b>Лікування каналів</b> і пульпіту, щоб зберегти зуб</span></li><li><span><b>Відновлення форми зуба</b> після руйнування</span></li><li><span><b>Видалення зубів</b>, коли зуб не врятувати</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Записатися на консультацію</a></div>
+    <blockquote class="note">Окрема подяка Максиму Петровичу, професіонал своєї справи. Особливо у відновленні форми зубів. Ідеально відновив зуб, крім того все зробив швидко і безболісно.<footer>Святослав Б., відгук на Google</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc svc--flip" id="orthodontics" aria-labelledby="orthodontics-t">
-  <div class="media rv"><img src="images/photos/ortho-brackets.jpg" width="720" height="756" loading="lazy" alt="Набір брекетів у клініці перед встановленням"></div>
+  <div class="media" style="background-color:#afb0b4"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/ortho-brackets.jpg" width="720" height="756" loading="lazy" alt="Набір брекетів у клініці перед встановленням"></div>
   <div>
-    <h2 class="d2 rv" id="orthodontics-t">Ортодонтія</h2>
-    <p class="lead rv">Вирівнюємо зуби і виправляємо прикус у дітей і дорослих. Лікування веде лікар-ортодонт Ірина Іванівна Глова.</p>
-    <ul class="ticks rv"><li><span><b>Брекети</b> для дітей і дорослих</span></li><li><span><b>Елайнери</b>, прозорі капи замість брекетів</span></li><li><span><b>Ортодонтія для дітей</b>, коли прикус ще формується</span></li><li><span><b>Ретейнери</b>, щоб зуби залишились рівними після лікування</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Записатися до ортодонта</a></div>
+    <h2 class="d2" id="orthodontics-t">Ортодонтія</h2>
+    <p class="lead">Вирівнюємо зуби і виправляємо прикус у дітей і дорослих. Лікування веде лікар-ортодонт Ірина Іванівна Глова.</p>
+    <ul class="ticks"><li><span><b>Брекети</b> для дітей і дорослих</span></li><li><span><b>Елайнери</b>, прозорі капи замість брекетів</span></li><li><span><b>Ортодонтія для дітей</b>, коли прикус ще формується</span></li><li><span><b>Ретейнери</b>, щоб зуби залишились рівними після лікування</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Записатися до ортодонта</a></div>
     
   </div>
 </section>
 <section class="wrap svc" id="pediatric" aria-labelledby="pediatric-t">
-  <div class="media rv" style="aspect-ratio:16/11"><img src="kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt="Кадр з мультика Sladent: Зубик сміливо сидить у кріслі"></div>
+  <div class="media" style="background-color:#cfc9d4;aspect-ratio:16/11"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt="Кадр з мультика Sladent: Зубик сміливо сидить у кріслі"></div>
   <div>
-    <h2 class="d2 rv" id="pediatric-t">Дитяча стоматологія</h2>
-    <p class="lead rv">Лікуємо дітей з трьох років. Не поспішаємо: дитина має звикнути до лікаря, щоб наступного разу йти без страху.</p>
-    <ul class="ticks rv"><li><span><b>Перший огляд</b> і знайомство з кабінетом</span></li><li><span><b>Лікування молочних зубів</b></span></li><li><span><b>Герметизація фісур</b> і фторування для захисту від карієсу</span></li><li><span><b>Вчимо чистити зуби</b> в ігровій формі</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Записати дитину</a><a class="btn btn--soft" href="kids/">Ігри та мультики</a></div>
-    <blockquote class="note rv">Лікували сьогодні зуб 4-річному сину, щиро дякуємо лікарю Софії Романівні та асистенту, за професійну роботу та гарний настрій!<footer>Іван М., відгук на Google</footer></blockquote>
+    <h2 class="d2" id="pediatric-t">Дитяча стоматологія</h2>
+    <p class="lead">Лікуємо дітей з трьох років. Не поспішаємо: дитина має звикнути до лікаря, щоб наступного разу йти без страху.</p>
+    <ul class="ticks"><li><span><b>Перший огляд</b> і знайомство з кабінетом</span></li><li><span><b>Лікування молочних зубів</b></span></li><li><span><b>Герметизація фісур</b> і фторування для захисту від карієсу</span></li><li><span><b>Вчимо чистити зуби</b> в ігровій формі</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Записати дитину</a><a class="btn btn--soft" href="kids/">Ігри та мультики</a></div>
+    <blockquote class="note">Лікували сьогодні зуб 4-річному сину, щиро дякуємо лікарю Софії Романівні та асистенту, за професійну роботу та гарний настрій!<footer>Іван М., відгук на Google</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc svc--flip" id="hygiene" aria-labelledby="hygiene-t">
-  <div class="media rv"><img src="images/photos/hygiene-tools.jpg" width="686" height="720" loading="lazy" alt="Стерильні інструменти на лотку перед прийомом"></div>
+  <div class="media" style="background-color:#6a7276"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/hygiene-tools.jpg" width="686" height="720" loading="lazy" alt="Стерильні інструменти на лотку перед прийомом"></div>
   <div>
-    <h2 class="d2 rv" id="hygiene-t">Професійна гігієна</h2>
-    <p class="lead rv">Регулярна чистка тримає зуби і ясна здоровими та помічає проблеми рано. Радимо приходити раз на пів року.</p>
-    <ul class="ticks rv"><li><span><b>Ультразвукове чищення</b> від зубного каменю</span></li><li><span><b>Чищення від нальоту</b> і пігментації</span></li><li><span><b>Полірування</b> і фторування емалі</span></li><li><span><b>Догляд за яснами</b>, лікування запалення</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Записатися на чистку</a></div>
+    <h2 class="d2" id="hygiene-t">Професійна гігієна</h2>
+    <p class="lead">Регулярна чистка тримає зуби і ясна здоровими та помічає проблеми рано. Радимо приходити раз на пів року.</p>
+    <ul class="ticks"><li><span><b>Ультразвукове чищення</b> від зубного каменю</span></li><li><span><b>Чищення від нальоту</b> і пігментації</span></li><li><span><b>Полірування</b> і фторування емалі</span></li><li><span><b>Догляд за яснами</b>, лікування запалення</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Записатися на чистку</a></div>
     
   </div>
 </section>
 <section class="sec sec--tone" id="more" aria-labelledby="more-t">
   <div class="wrap">
-    <h2 class="d2 rv" id="more-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Ще ми робимо</h2>
+    <h2 class="d2" id="more-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Ще ми робимо</h2>
     <div class="extra">
-      <article class="rv"><h3 class="d3">Протезування</h3><p>Коронки, мости і знімні протези, щоб повернути зубам форму й функцію.</p></article>
-      <article class="rv"><h3 class="d3">Хірургія</h3><p>Видалення зубів, зокрема зубів мудрості, і підготовка до імплантації.</p></article>
-      <article class="rv"><h3 class="d3">Лікування ясен</h3><p>Лікуємо запалення і кровоточивість ясен, допомагаємо зберегти зуби.</p></article>
+      <article><h3 class="d3">Протезування</h3><p>Коронки, мости і знімні протези, щоб повернути зубам форму й функцію.</p></article>
+      <article><h3 class="d3">Хірургія</h3><p>Видалення зубів, зокрема зубів мудрості, і підготовка до імплантації.</p></article>
+      <article><h3 class="d3">Лікування ясен</h3><p>Лікуємо запалення і кровоточивість ясен, допомагаємо зберегти зуби.</p></article>
     </div>
   </div>
 </section>
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Запишіться на прийом</h2>
         <p class="lead">Зателефонуйте або залиште заявку на сайті, і адміністратор підбере зручний час.</p>

@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="images/icon.ico">
   <link rel="apple-touch-icon" href="images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -54,10 +54,10 @@
 <section class="phero" aria-labelledby="t">
   <div class="wrap phero__row">
     <div>
-      <h1 class="d1 rv" id="t">Відгуки пацієнтів</h1>
-      <div class="score rv"><b>4,8</b><div><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><small>93 відгуки на Google</small></div></div>
+      <h1 class="d1" id="t">Відгуки пацієнтів</h1>
+      <div class="score"><b>4,8</b><div><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><small>93 відгуки на Google</small></div></div>
     </div>
-    <blockquote class="quote rv"><p>Послугами лікаря-стоматолога Придатка Ярослава Григоровича користуюся з 90-х років. За стоматологічною усмішкою завжди повертатимуся в клініку SLADENT.</p><footer>Олег Б. · відгук на Google</footer></blockquote>
+    <blockquote class="quote"><p>Послугами лікаря-стоматолога Придатка Ярослава Григоровича користуюся з 90-х років. За стоматологічною усмішкою завжди повертатимуся в клініку SLADENT.</p><footer>Олег Б. · відгук на Google</footer></blockquote>
   </div>
 </section>
 <section class="sec" style="padding-top:clamp(1rem,2vw,2rem)" aria-label="Вибрані відгуки">
@@ -66,10 +66,10 @@
 <section class="sec sec--tone" aria-labelledby="g-t">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="g-t">Усі відгуки з Google</h2>
-      <p class="rv">Свіжі відгуки підтягуються з Google автоматично. Будемо вдячні, якщо залишите свій.</p>
+      <h2 class="d2" id="g-t">Усі відгуки з Google</h2>
+      <p>Свіжі відгуки підтягуються з Google автоматично. Будемо вдячні, якщо залишите свій.</p>
     </div>
-    <div class="form-card rv">
+    <div class="form-card form-card--reviews">
       <script src="https://static.elfsight.com/platform/platform.js" async></script>
       <div class="elfsight-app-948240cf-e926-4c1e-82aa-ef7c5c3e42bb" data-elfsight-app-lazy></div>
     </div>
@@ -78,7 +78,7 @@
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Запишіться на прийом</h2>
         <p class="lead">Зателефонуйте або залиште заявку на сайті, і адміністратор підбере зручний час.</p>

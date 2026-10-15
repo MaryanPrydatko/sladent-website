@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../images/icon.ico">
   <link rel="apple-touch-icon" href="../images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="../fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../site.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -53,39 +53,39 @@
 <main id="main">
 <section class="phero" aria-labelledby="t">
   <div class="wrap phero__row">
-    <h1 class="d1 rv" id="t">Doctors and team</h1>
-    <p class="lead rv">Our doctors and the team who will greet you at reception, prepare the room and stay with you during your visit.</p>
+    <h1 class="d1" id="t">Doctors and team</h1>
+    <p class="lead">Our doctors and the team who will greet you at reception, prepare the room and stay with you during your visit.</p>
   </div>
 </section>
 <section class="sec" style="padding-top:0" aria-labelledby="d-t">
   <div class="wrap">
-    <h2 class="d2 rv" id="d-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Doctors</h2>
-    <div class="people"><article class="person rv"><div class="media"><img src="../images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yaroslav Prydatko"></div><h3>Yaroslav Prydatko</h3><p class="role">Founder and head doctor. General dentistry, prosthetics, aesthetic restorations.</p><blockquote>The doctor explains everything in detail, works very carefully and earns complete trust.<footer>Svitlana R., Google review</footer></blockquote></article><article class="person rv"><div class="media"><img src="../images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yurii Prydatko"></div><h3>Yurii Prydatko</h3><p class="role">Dentist and implant surgeon. Implants, bone grafting, sinus lift.</p></article><article class="person rv"><div class="media"><img src="../images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Svitlana Prydatko"></div><h3>Svitlana Prydatko</h3><p class="role">Dentist. Treats adults and children.</p><blockquote>Svitlana Karlivna is a wonderful doctor with great experience, a true professional.<footer>Yuliia Ch., Google review</footer></blockquote></article><article class="person rv"><div class="media"><img src="../images/team/iryna-hlova.jpg" width="960" height="1200" loading="lazy" alt="Iryna Hlova"></div><h3>Iryna Hlova</h3><p class="role">Orthodontist. Braces, aligners, bite correction for children and adults.</p></article><article class="person rv"><div class="media"><img src="../images/team/iryna-vasylivna.jpg" width="960" height="1200" loading="lazy" alt="Iryna Vasylivna"></div><h3>Iryna Vasylivna</h3><p class="role">Dentist.</p><blockquote>Professional doctors and friendly staff. Iryna Vasylivna is a wonderful doctor!<footer>Liudmyla K., Google review</footer></blockquote></article><article class="person rv"><div class="media"><img src="../images/team/sofiia-hapii.jpg" width="960" height="1200" loading="lazy" alt="Sofiia Hapii"></div><h3>Sofiia Hapii</h3><p class="role">Dentist. Also treats young children.</p><blockquote>Today they treated a tooth for our 4-year-old son. Many thanks to Dr. Sofiia Romanivna and the assistant for the professional work and the good mood!<footer>Ivan M., Google review</footer></blockquote></article></div>
+    <h2 class="d2" id="d-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Doctors</h2>
+    <div class="people"><article class="person"><div class="media" style="background-color:#8e8278"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yaroslav Prydatko"></div><h3>Yaroslav Prydatko</h3><p class="role">Founder and head doctor. General dentistry, prosthetics, aesthetic restorations.</p><blockquote>The doctor explains everything in detail, works very carefully and earns complete trust.<footer>Svitlana R., Google review</footer></blockquote></article><article class="person"><div class="media" style="background-color:#8e857b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Yurii Prydatko"></div><h3>Yurii Prydatko</h3><p class="role">Dentist and implant surgeon. Implants, bone grafting, sinus lift.</p></article><article class="person"><div class="media" style="background-color:#877c71"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Svitlana Prydatko"></div><h3>Svitlana Prydatko</h3><p class="role">Dentist. Treats adults and children.</p><blockquote>Svitlana Karlivna is a wonderful doctor with great experience, a true professional.<footer>Yuliia Ch., Google review</footer></blockquote></article><article class="person"><div class="media" style="background-color:#8c847b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/iryna-hlova.jpg" width="960" height="1200" loading="lazy" alt="Iryna Hlova"></div><h3>Iryna Hlova</h3><p class="role">Orthodontist. Braces, aligners, bite correction for children and adults.</p></article><article class="person"><div class="media" style="background-color:#857a6f"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/iryna-vasylivna.jpg" width="960" height="1200" loading="lazy" alt="Iryna Vasylivna"></div><h3>Iryna Vasylivna</h3><p class="role">Dentist.</p><blockquote>Professional doctors and friendly staff. Iryna Vasylivna is a wonderful doctor!<footer>Liudmyla K., Google review</footer></blockquote></article><article class="person"><div class="media" style="background-color:#7b7067"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/sofiia-hapii.jpg" width="960" height="1200" loading="lazy" alt="Sofiia Hapii"></div><h3>Sofiia Hapii</h3><p class="role">Dentist. Also treats young children.</p><blockquote>Today they treated a tooth for our 4-year-old son. Many thanks to Dr. Sofiia Romanivna and the assistant for the professional work and the good mood!<footer>Ivan M., Google review</footer></blockquote></article></div>
   </div>
 </section>
 <section class="sec sec--tone" aria-labelledby="s-t">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="s-t">Clinic team</h2>
-      <p class="rv">Assistants, nurses and administrators. They book your appointment, prepare the instruments and assist the doctor.</p>
+      <h2 class="d2" id="s-t">Clinic team</h2>
+      <p>Assistants, nurses and administrators. They book your appointment, prepare the instruments and assist the doctor.</p>
     </div>
-    <div class="people people--5"><article class="person rv"><div class="media"><img src="../images/team/nataliia-admin.jpg" width="960" height="1200" loading="lazy" alt="Nataliia Serhiivna"></div><h3>Nataliia Serhiivna</h3><p class="role">Administrator</p></article><article class="person rv"><div class="media"><img src="../images/team/liubov-shvarchovska.jpg" width="960" height="1200" loading="lazy" alt="Liubov Shvarchovska"></div><h3>Liubov Shvarchovska</h3><p class="role">Nurse</p></article><article class="person rv"><div class="media"><img src="../images/team/olesia.jpg" width="960" height="1200" loading="lazy" alt="Olesia"></div><h3>Olesia</h3><p class="role">Dental assistant</p></article><article class="person rv"><div class="media"><img src="../images/team/sofiia-assistant.jpg" width="960" height="1200" loading="lazy" alt="Sofiia"></div><h3>Sofiia</h3><p class="role">Dental assistant</p></article><article class="person rv"><div class="media"><img src="../images/team/yuliia.jpg" width="960" height="1200" loading="lazy" alt="Yuliia"></div><h3>Yuliia</h3><p class="role">Dental assistant</p></article></div>
+    <div class="people people--5"><article class="person"><div class="media" style="background-color:#988d80"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/nataliia-admin.jpg" width="960" height="1200" loading="lazy" alt="Nataliia Serhiivna"></div><h3>Nataliia Serhiivna</h3><p class="role">Administrator</p></article><article class="person"><div class="media" style="background-color:#89786c"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/liubov-shvarchovska.jpg" width="960" height="1200" loading="lazy" alt="Liubov Shvarchovska"></div><h3>Liubov Shvarchovska</h3><p class="role">Nurse</p></article><article class="person"><div class="media" style="background-color:#968d85"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/olesia.jpg" width="960" height="1200" loading="lazy" alt="Olesia"></div><h3>Olesia</h3><p class="role">Dental assistant</p></article><article class="person"><div class="media" style="background-color:#999185"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/sofiia-assistant.jpg" width="960" height="1200" loading="lazy" alt="Sofiia"></div><h3>Sofiia</h3><p class="role">Dental assistant</p></article><article class="person"><div class="media" style="background-color:#927c6b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/team/yuliia.jpg" width="960" height="1200" loading="lazy" alt="Yuliia"></div><h3>Yuliia</h3><p class="role">Dental assistant</p></article></div>
   </div>
 </section>
 <section class="sec" aria-labelledby="all-t">
   <div class="wrap split split--flip">
-    <div class="media rv" style="aspect-ratio:4/5"><img src="../images/photos/team-vertical.jpg" srcset="../images/photos/team-vertical-700.jpg 700w, ../images/photos/team-vertical.jpg 1400w" sizes="(max-width: 900px) 100vw, 50vw" width="1400" height="2100" loading="lazy" alt="The whole Sladent team together"></div>
+    <div class="media" style="background-color:#b9b1aa;aspect-ratio:4/5"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/team-vertical.jpg" srcset="../images/photos/team-vertical-700.jpg 700w, ../images/photos/team-vertical.jpg 1400w" sizes="(max-width: 900px) 100vw, 50vw" width="1400" height="2100" loading="lazy" alt="The whole Sladent team together"></div>
     <div>
-      <h2 class="d2 rv" id="all-t">The whole team</h2>
-      <p class="lead rv" style="margin-top:1.25rem">A big team means you are seen quickly and your doctor has an assistant at every visit.</p>
-      <div class="rv" style="margin-top:2rem"><a class="btn btn--red" href="contact.html#booking-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg>Book an appointment</a></div>
+      <h2 class="d2" id="all-t">The whole team</h2>
+      <p class="lead" style="margin-top:1.25rem">A big team means you are seen quickly and your doctor has an assistant at every visit.</p>
+      <div style="margin-top:2rem"><a class="btn btn--red" href="contact.html#booking-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg>Book an appointment</a></div>
     </div>
   </div>
 </section>
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Book an appointment</h2>
         <p class="lead">Call us or leave a request on the site and our administrator will find a time that suits you.</p>

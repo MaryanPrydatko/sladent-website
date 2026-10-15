@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="images/icon.ico">
   <link rel="apple-touch-icon" href="images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -53,39 +53,39 @@
 <main id="main">
 <section class="phero" aria-labelledby="t">
   <div class="wrap phero__row">
-    <h1 class="d1 rv" id="t">Лікарі та команда</h1>
-    <p class="lead rv">Лікарі і команда, яка зустріне вас на рецепції, підготує кабінет і буде поруч під час прийому.</p>
+    <h1 class="d1" id="t">Лікарі та команда</h1>
+    <p class="lead">Лікарі і команда, яка зустріне вас на рецепції, підготує кабінет і буде поруч під час прийому.</p>
   </div>
 </section>
 <section class="sec" style="padding-top:0" aria-labelledby="d-t">
   <div class="wrap">
-    <h2 class="d2 rv" id="d-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Лікарі</h2>
-    <div class="people"><article class="person rv"><div class="media"><img src="images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Ярослав Григорович Придатко"></div><h3>Ярослав Григорович Придатко</h3><p class="role">Засновник і головний лікар. Терапія, протезування, естетичні реставрації.</p><blockquote>Лікар все детально пояснює, працює дуже акуратно і викликає повну довіру.<footer>Світлана Р., Google</footer></blockquote></article><article class="person rv"><div class="media"><img src="images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Юрій Ярославович Придатко"></div><h3>Юрій Ярославович Придатко</h3><p class="role">Лікар-стоматолог, хірург-імплантолог. Імплантація, кісткова пластика, синус-ліфтинг.</p></article><article class="person rv"><div class="media"><img src="images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Світлана Карлівна Придатко"></div><h3>Світлана Карлівна Придатко</h3><p class="role">Лікар-стоматолог. Лікує дорослих і дітей.</p><blockquote>Світлана Карлівна прекрасний лікар, з великим досвідом роботи, професіонал своєї справи.<footer>Юлія Ч., Google</footer></blockquote></article><article class="person rv"><div class="media"><img src="images/team/iryna-hlova.jpg" width="960" height="1200" loading="lazy" alt="Ірина Іванівна Глова"></div><h3>Ірина Іванівна Глова</h3><p class="role">Лікар-ортодонт. Брекети, елайнери, прикус у дітей і дорослих.</p></article><article class="person rv"><div class="media"><img src="images/team/iryna-vasylivna.jpg" width="960" height="1200" loading="lazy" alt="Ірина Василівна"></div><h3>Ірина Василівна</h3><p class="role">Лікар-стоматолог.</p><blockquote>Професійні лікарі та привітний персонал. Ірина Василівна чудовий лікар!<footer>Людмила К., Google</footer></blockquote></article><article class="person rv"><div class="media"><img src="images/team/sofiia-hapii.jpg" width="960" height="1200" loading="lazy" alt="Софія Романівна Гапій"></div><h3>Софія Романівна Гапій</h3><p class="role">Лікар-стоматолог. Лікує і маленьких пацієнтів.</p><blockquote>Лікували сьогодні зуб 4-річному сину, щиро дякуємо лікарю Софії Романівні та асистенту, за професійну роботу та гарний настрій!<footer>Іван М., Google</footer></blockquote></article></div>
+    <h2 class="d2" id="d-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Лікарі</h2>
+    <div class="people"><article class="person"><div class="media" style="background-color:#8e8278"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Ярослав Григорович Придатко"></div><h3>Ярослав Григорович Придатко</h3><p class="role">Засновник і головний лікар. Терапія, протезування, естетичні реставрації.</p><blockquote>Лікар все детально пояснює, працює дуже акуратно і викликає повну довіру.<footer>Світлана Р., Google</footer></blockquote></article><article class="person"><div class="media" style="background-color:#8e857b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Юрій Ярославович Придатко"></div><h3>Юрій Ярославович Придатко</h3><p class="role">Лікар-стоматолог, хірург-імплантолог. Імплантація, кісткова пластика, синус-ліфтинг.</p></article><article class="person"><div class="media" style="background-color:#877c71"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Світлана Карлівна Придатко"></div><h3>Світлана Карлівна Придатко</h3><p class="role">Лікар-стоматолог. Лікує дорослих і дітей.</p><blockquote>Світлана Карлівна прекрасний лікар, з великим досвідом роботи, професіонал своєї справи.<footer>Юлія Ч., Google</footer></blockquote></article><article class="person"><div class="media" style="background-color:#8c847b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/iryna-hlova.jpg" width="960" height="1200" loading="lazy" alt="Ірина Іванівна Глова"></div><h3>Ірина Іванівна Глова</h3><p class="role">Лікар-ортодонт. Брекети, елайнери, прикус у дітей і дорослих.</p></article><article class="person"><div class="media" style="background-color:#857a6f"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/iryna-vasylivna.jpg" width="960" height="1200" loading="lazy" alt="Ірина Василівна"></div><h3>Ірина Василівна</h3><p class="role">Лікар-стоматолог.</p><blockquote>Професійні лікарі та привітний персонал. Ірина Василівна чудовий лікар!<footer>Людмила К., Google</footer></blockquote></article><article class="person"><div class="media" style="background-color:#7b7067"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/sofiia-hapii.jpg" width="960" height="1200" loading="lazy" alt="Софія Романівна Гапій"></div><h3>Софія Романівна Гапій</h3><p class="role">Лікар-стоматолог. Лікує і маленьких пацієнтів.</p><blockquote>Лікували сьогодні зуб 4-річному сину, щиро дякуємо лікарю Софії Романівні та асистенту, за професійну роботу та гарний настрій!<footer>Іван М., Google</footer></blockquote></article></div>
   </div>
 </section>
 <section class="sec sec--tone" aria-labelledby="s-t">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="s-t">Команда клініки</h2>
-      <p class="rv">Асистенти, медсестри й адміністратори. Саме вони записують вас на прийом, готують інструменти і допомагають лікарю.</p>
+      <h2 class="d2" id="s-t">Команда клініки</h2>
+      <p>Асистенти, медсестри й адміністратори. Саме вони записують вас на прийом, готують інструменти і допомагають лікарю.</p>
     </div>
-    <div class="people people--5"><article class="person rv"><div class="media"><img src="images/team/nataliia-admin.jpg" width="960" height="1200" loading="lazy" alt="Наталія Сергіївна"></div><h3>Наталія Сергіївна</h3><p class="role">Адміністратор</p></article><article class="person rv"><div class="media"><img src="images/team/liubov-shvarchovska.jpg" width="960" height="1200" loading="lazy" alt="Любов Шварчовська"></div><h3>Любов Шварчовська</h3><p class="role">Медсестра</p></article><article class="person rv"><div class="media"><img src="images/team/olesia.jpg" width="960" height="1200" loading="lazy" alt="Олеся"></div><h3>Олеся</h3><p class="role">Асистент лікаря</p></article><article class="person rv"><div class="media"><img src="images/team/sofiia-assistant.jpg" width="960" height="1200" loading="lazy" alt="Софія"></div><h3>Софія</h3><p class="role">Асистент лікаря</p></article><article class="person rv"><div class="media"><img src="images/team/yuliia.jpg" width="960" height="1200" loading="lazy" alt="Юлія"></div><h3>Юлія</h3><p class="role">Асистент лікаря</p></article></div>
+    <div class="people people--5"><article class="person"><div class="media" style="background-color:#988d80"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/nataliia-admin.jpg" width="960" height="1200" loading="lazy" alt="Наталія Сергіївна"></div><h3>Наталія Сергіївна</h3><p class="role">Адміністратор</p></article><article class="person"><div class="media" style="background-color:#89786c"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/liubov-shvarchovska.jpg" width="960" height="1200" loading="lazy" alt="Любов Шварчовська"></div><h3>Любов Шварчовська</h3><p class="role">Медсестра</p></article><article class="person"><div class="media" style="background-color:#968d85"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/olesia.jpg" width="960" height="1200" loading="lazy" alt="Олеся"></div><h3>Олеся</h3><p class="role">Асистент лікаря</p></article><article class="person"><div class="media" style="background-color:#999185"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/sofiia-assistant.jpg" width="960" height="1200" loading="lazy" alt="Софія"></div><h3>Софія</h3><p class="role">Асистент лікаря</p></article><article class="person"><div class="media" style="background-color:#927c6b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/yuliia.jpg" width="960" height="1200" loading="lazy" alt="Юлія"></div><h3>Юлія</h3><p class="role">Асистент лікаря</p></article></div>
   </div>
 </section>
 <section class="sec" aria-labelledby="all-t">
   <div class="wrap split split--flip">
-    <div class="media rv" style="aspect-ratio:4/5"><img src="images/photos/team-vertical.jpg" srcset="images/photos/team-vertical-700.jpg 700w, images/photos/team-vertical.jpg 1400w" sizes="(max-width: 900px) 100vw, 50vw" width="1400" height="2100" loading="lazy" alt="Уся команда Sladent разом"></div>
+    <div class="media" style="background-color:#b9b1aa;aspect-ratio:4/5"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/team-vertical.jpg" srcset="images/photos/team-vertical-700.jpg 700w, images/photos/team-vertical.jpg 1400w" sizes="(max-width: 900px) 100vw, 50vw" width="1400" height="2100" loading="lazy" alt="Уся команда Sladent разом"></div>
     <div>
-      <h2 class="d2 rv" id="all-t">Уся команда разом</h2>
-      <p class="lead rv" style="margin-top:1.25rem">Велика команда означає, що вас приймуть швидко, а лікар матиме поруч асистента на кожному прийомі.</p>
-      <div class="rv" style="margin-top:2rem"><a class="btn btn--red" href="contact.html#booking-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg>Записатися на прийом</a></div>
+      <h2 class="d2" id="all-t">Уся команда разом</h2>
+      <p class="lead" style="margin-top:1.25rem">Велика команда означає, що вас приймуть швидко, а лікар матиме поруч асистента на кожному прийомі.</p>
+      <div style="margin-top:2rem"><a class="btn btn--red" href="contact.html#booking-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg>Записатися на прийом</a></div>
     </div>
   </div>
 </section>
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Запишіться на прийом</h2>
         <p class="lead">Зателефонуйте або залиште заявку на сайті, і адміністратор підбере зручний час.</p>

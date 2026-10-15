@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../images/icon.ico">
   <link rel="apple-touch-icon" href="../images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="../fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../site.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -53,49 +53,49 @@
 <main id="main">
 <section class="phero" aria-labelledby="t">
   <div class="wrap phero__row">
-    <h1 class="d1 rv" id="t">A family clinic since 2008</h1>
-    <p class="lead rv">Sladent is the Prydatko family dental clinic at 8 Zluky Avenue in Ternopil. One patient has seen Dr. Yaroslav Prydatko since the 1990s.</p>
+    <h1 class="d1" id="t">A family clinic since 2008</h1>
+    <p class="lead">Sladent is the Prydatko family dental clinic at 8 Zluky Avenue in Ternopil. One patient has seen Dr. Yaroslav Prydatko since the 1990s.</p>
   </div>
 </section>
 <section aria-label="The team">
-  <div class="wrap"><div class="media rv" style="aspect-ratio:16/8"><img src="../images/photos/team-sofa-2.jpg" srcset="../images/photos/team-sofa-2-800.jpg 800w, ../images/photos/team-sofa-2-1300.jpg 1300w, ../images/photos/team-sofa-2.jpg 2000w" sizes="(max-width: 1400px) 100vw, 1300px" width="2000" height="1333" loading="lazy" alt="The whole Sladent team at the clinic"></div>
+  <div class="wrap"><div class="media" style="background-color:#ada6a0;aspect-ratio:16/8"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/team-sofa-2.jpg" srcset="../images/photos/team-sofa-2-800.jpg 800w, ../images/photos/team-sofa-2-1300.jpg 1300w, ../images/photos/team-sofa-2.jpg 2000w" sizes="(max-width: 1400px) 100vw, 1300px" width="2000" height="1333" loading="lazy" alt="The whole Sladent team at the clinic"></div>
     <div class="facts">
-      <div class="fact rv"><b>2008</b><span>the year the Prydatko family opened the clinic</span></div>
-      <div class="fact rv"><b>4.8</b><span>average rating from 93 Google reviews</span></div>
-      <div class="fact rv"><b>until 8 pm</b><span>on weekdays, and until 3 pm on Saturday</span></div>
-      <div class="fact rv"><b>age 3+</b><span>we treat children, with games and cartoons while you wait</span></div>
+      <div class="fact"><b>2008</b><span>the year the Prydatko family opened the clinic</span></div>
+      <div class="fact"><b>4.8</b><span>average rating from 93 Google reviews</span></div>
+      <div class="fact"><b>until 8 pm</b><span>on weekdays, and until 3 pm on Saturday</span></div>
+      <div class="fact"><b>age 3+</b><span>we treat children, with games and cartoons while you wait</span></div>
     </div>
   </div>
 </section>
 <section class="sec" aria-labelledby="story-t">
   <div class="wrap split">
     <div>
-      <h2 class="d2 rv" id="story-t">How it started</h2>
-      <div class="prose rv" style="margin-top:1.5rem">
+      <h2 class="d2" id="story-t">How it started</h2>
+      <div class="prose" style="margin-top:1.5rem">
         <p><strong>Prydatko Family Dentistry</strong> was founded in 2008 by Dr. Yaroslav Prydatko. Whole families have come here from the start, and many still do.</p>
         <p>The clinic grew and so did the team. Today Dr. Yaroslav Prydatko works with Dr. Yurii Prydatko and Dr. Svitlana Prydatko, other dentists, an orthodontist, assistants, nurses and administrators.</p>
         <p><strong>Sladent</strong> is the modern name of the same family clinic. The same people and the same care.</p>
       </div>
     </div>
-    <div class="media media--video rv" style="aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="../videos/team-poster.jpg" width="720" height="1280" aria-label="The Sladent team at the clinic"><source src="../videos/team.mp4" type="video/mp4"></video></div>
+    <div class="media media--video" style="background-color:#797269;aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="../videos/team-poster.jpg" width="720" height="1280" aria-label="The Sladent team at the clinic"><source src="../videos/team.mp4" type="video/mp4"></video></div>
   </div>
 </section>
 <section class="sec sec--tone" aria-labelledby="val-t">
   <div class="wrap">
-    <h2 class="d2 rv" id="val-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Why patients come back</h2>
-    <div class="values"><article class="rv"><h3 class="d3">A family clinic</h3><p>The Prydatko family of dentists founded the clinic and still works here every day. Many patients have come with their whole family for years.</p></article><article class="rv"><h3 class="d3">We explain everything</h3><p>Before treatment the doctor explains what will be done and why, and afterwards tells you how to care for your teeth.</p></article><article class="rv"><h3 class="d3">Children without fear</h3><p>We treat children from age three and take our time. While you wait, there are games and cartoons about Zubyk the tooth.</p></article><article class="rv"><h3 class="d3">Everything in one place</h3><p>Fillings, hygiene, aesthetics, orthodontics, surgery and implants. No need to look for different doctors around the city.</p></article><article class="rv"><h3 class="d3">Convenient hours</h3><p>We are open until 8 pm on weekdays and until 3 pm on Saturday, so you can come after work.</p></article><article class="rv"><h3 class="d3">A big team</h3><p>Doctors, assistants, nurses and administrators who know patients by name.</p></article></div>
+    <h2 class="d2" id="val-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Why patients come back</h2>
+    <div class="values"><article><h3 class="d3">A family clinic</h3><p>The Prydatko family of dentists founded the clinic and still works here every day. Many patients have come with their whole family for years.</p></article><article><h3 class="d3">We explain everything</h3><p>Before treatment the doctor explains what will be done and why, and afterwards tells you how to care for your teeth.</p></article><article><h3 class="d3">Children without fear</h3><p>We treat children from age three and take our time. While you wait, there are games and cartoons about Zubyk the tooth.</p></article><article><h3 class="d3">Everything in one place</h3><p>Fillings, hygiene, aesthetics, orthodontics, surgery and implants. No need to look for different doctors around the city.</p></article><article><h3 class="d3">Convenient hours</h3><p>We are open until 8 pm on weekdays and until 3 pm on Saturday, so you can come after work.</p></article><article><h3 class="d3">A big team</h3><p>Doctors, assistants, nurses and administrators who know patients by name.</p></article></div>
   </div>
 </section>
 <section class="sec" aria-labelledby="q-t">
   <div class="wrap reviews-top" style="margin-bottom:0">
-    <h2 class="d2 rv" id="q-t">What patients say</h2>
-    <blockquote class="quote rv"><p>Trusted by our whole family for more than a decade. Sincerely recommend.</p><footer>Tati B. · Google review, translated · <a class="arrow" href="reviews.html">All reviews</a></footer></blockquote>
+    <h2 class="d2" id="q-t">What patients say</h2>
+    <blockquote class="quote"><p>Trusted by our whole family for more than a decade. Sincerely recommend.</p><footer>Tati B. · Google review, translated · <a class="arrow" href="reviews.html">All reviews</a></footer></blockquote>
   </div>
 </section>
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Book an appointment</h2>
         <p class="lead">Call us or leave a request on the site and our administrator will find a time that suits you.</p>
@@ -113,10 +113,10 @@
 
 <section class="sec sec--tight" aria-labelledby="place-title">
   <div class="wrap">
-    <h2 class="d2 rv" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">8 Zluky Avenue, Ternopil</h2>
+    <h2 class="d2" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">8 Zluky Avenue, Ternopil</h2>
     <div class="place">
-      <div class="media rv"><img src="../images/photos/clinic-outside.jpg" srcset="../images/photos/clinic-outside-800.jpg 800w, ../images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="The Sladent team outside the clinic at 8 Zluky Avenue"></div>
-      <div class="media rv"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent on the map: 8 Zluky Avenue, Ternopil" allowfullscreen></iframe></div>
+      <div class="media" style="background-color:#6f7461"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/clinic-outside.jpg" srcset="../images/photos/clinic-outside-800.jpg 800w, ../images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="The Sladent team outside the clinic at 8 Zluky Avenue"></div>
+      <div class="media"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent on the map: 8 Zluky Avenue, Ternopil" allowfullscreen></iframe></div>
     </div>
   </div>
 </section>

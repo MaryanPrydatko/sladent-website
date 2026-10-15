@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="images/icon.ico">
   <link rel="apple-touch-icon" href="images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
   <link rel="preload" as="image" href="images/photos/team-sofa.jpg" imagesrcset="images/photos/team-sofa-800.jpg 800w, images/photos/team-sofa-1400.jpg 1400w, images/photos/team-sofa.jpg 2400w" imagesizes="(max-width: 1400px) 100vw, 1300px" fetchpriority="high">
   <script>document.documentElement.classList.add('js')</script>
@@ -181,24 +181,24 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap">
     <div class="hero__top">
-      <h1 class="d1 rv" id="hero-title">Тут лікуються цілими родинами.</h1>
-      <div class="rv">
+      <h1 class="d1" id="hero-title">Тут лікуються цілими родинами.</h1>
+      <div>
         <p class="lead">Стоматологія родини Придатко в Тернополі з 2008 року. Дорослі й діти, від першого огляду до імплантів.</p>
         <div class="hero__cta"><a class="btn btn--red" href="contact.html#booking-form"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg>Записатися на прийом</a><a class="btn btn--soft" href="tel:+380979351535"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.96.4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.85.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>+380 97 935 15 35</a></div>
       </div>
     </div>
-    <div class="media hero__media rv">
-      <img src="images/photos/team-sofa.jpg" srcset="images/photos/team-sofa-800.jpg 800w, images/photos/team-sofa-1400.jpg 1400w, images/photos/team-sofa.jpg 2400w" sizes="(max-width: 1400px) 100vw, 1300px" width="2400" height="1600" alt="Команда Sladent: лікарі, асистенти, медсестри й адміністратори у клініці" fetchpriority="high">
+    <div class="media hero__media" style="background-color:#aba49e">
+      <img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/team-sofa.jpg" srcset="images/photos/team-sofa-800.jpg 800w, images/photos/team-sofa-1400.jpg 1400w, images/photos/team-sofa.jpg 2400w" sizes="(max-width: 1400px) 100vw, 1300px" width="2400" height="1600" alt="Команда Sladent: лікарі, асистенти, медсестри й адміністратори у клініці" fetchpriority="high">
       <div class="hero__chips">
         <a class="chip" href="reviews.html"><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><span>4,8 <small>· 93 відгуки на Google</small></span></a>
         <span class="chip"><span data-status>Пн–Пт 09:00–20:00</span></span>
       </div>
     </div>
     <div class="facts">
-      <div class="fact rv"><b>2008</b><span>рік, коли родина Придатко відкрила клініку</span></div>
-      <div class="fact rv"><b>4,8</b><span>середня оцінка з 93 відгуків на Google</span></div>
-      <div class="fact rv"><b>до 20:00</b><span>приймаємо в будні, у суботу до 15:00</span></div>
-      <div class="fact rv"><b>з 3 років</b><span>лікуємо дітей, а поки чекаєте, є ігри й мультики</span></div>
+      <div class="fact"><b>2008</b><span>рік, коли родина Придатко відкрила клініку</span></div>
+      <div class="fact"><b>4,8</b><span>середня оцінка з 93 відгуків на Google</span></div>
+      <div class="fact"><b>до 20:00</b><span>приймаємо в будні, у суботу до 15:00</span></div>
+      <div class="fact"><b>з 3 років</b><span>лікуємо дітей, а поки чекаєте, є ігри й мультики</span></div>
     </div>
   </div>
 </section>
@@ -206,20 +206,20 @@
 <section class="sec" aria-labelledby="svc-title">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="svc-title">Від профілактики до нових зубів</h2>
-      <p class="rv">Лікування, естетика, ортодонтія та імплантація в одній клініці, у лікарів, які знають вашу історію.</p>
+      <h2 class="d2" id="svc-title">Від профілактики до нових зубів</h2>
+      <p>Лікування, естетика, ортодонтія та імплантація в одній клініці, у лікарів, які знають вашу історію.</p>
     </div>
     <div class="bento">
-      <a class="tile tile--photo rv" href="services.html#implants">
-        <img src="videos/surgery-poster.jpg" width="720" height="1280" alt="Хірурги Sladent під час імплантації" loading="lazy">
+      <a class="tile tile--photo" href="services.html#implants" style="background-color:#6f706f">
+        <img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="videos/surgery-poster.jpg" width="720" height="1280" alt="Хірурги Sladent під час імплантації" loading="lazy">
         <h3>Імплантація</h3><p>Від одного зуба до всього ряду на шести імплантах.</p><span class="arrow arrow--light">Детальніше</span>
       </a>
-      <a class="tile rv" href="services.html#cosmetic"><h3>Естетика</h3><p>Відбілювання Magic Smile, вініри, цирконієві коронки.</p><span class="arrow">Детальніше</span></a>
-      <a class="tile rv" href="services.html#general"><h3>Лікування зубів</h3><p>Карієс, пломби, канали, відновлення форми зуба.</p><span class="arrow">Детальніше</span></a>
-      <a class="tile rv" href="services.html#orthodontics"><h3>Ортодонтія</h3><p>Брекети й елайнери для дітей і дорослих.</p><span class="arrow">Детальніше</span></a>
-      <a class="tile rv" href="services.html#pediatric"><h3>Дитяча стоматологія</h3><p>Діти з трьох років, без поспіху і страху.</p><span class="arrow">Детальніше</span></a>
-      <a class="tile rv" href="services.html#hygiene"><h3>Гігієна</h3><p>Професійна чистка і догляд за яснами.</p><span class="arrow">Детальніше</span></a>
-      <a class="tile tile--wide tile--red rv" href="contact.html#booking-form"><h3>Не знаєте, з чого почати?</h3><p>Запишіться на огляд. Лікар пояснить, що потрібно, і складе план лікування.</p><span class="arrow">Записатися на огляд</span></a>
+      <a class="tile" href="services.html#cosmetic"><h3>Естетика</h3><p>Відбілювання Magic Smile, вініри, цирконієві коронки.</p><span class="arrow">Детальніше</span></a>
+      <a class="tile" href="services.html#general"><h3>Лікування зубів</h3><p>Карієс, пломби, канали, відновлення форми зуба.</p><span class="arrow">Детальніше</span></a>
+      <a class="tile" href="services.html#orthodontics"><h3>Ортодонтія</h3><p>Брекети й елайнери для дітей і дорослих.</p><span class="arrow">Детальніше</span></a>
+      <a class="tile" href="services.html#pediatric"><h3>Дитяча стоматологія</h3><p>Діти з трьох років, без поспіху і страху.</p><span class="arrow">Детальніше</span></a>
+      <a class="tile" href="services.html#hygiene"><h3>Гігієна</h3><p>Професійна чистка і догляд за яснами.</p><span class="arrow">Детальніше</span></a>
+      <a class="tile tile--wide tile--red" href="contact.html#booking-form"><h3>Не знаєте, з чого почати?</h3><p>Запишіться на огляд. Лікар пояснить, що потрібно, і складе план лікування.</p><span class="arrow">Записатися на огляд</span></a>
     </div>
   </div>
 </section>
@@ -227,13 +227,13 @@
 <section class="sec sec--tone" aria-labelledby="res-title">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="res-title">Результати наших пацієнтів</h2>
-      <p class="rv">Фото з нашого <a class="arrow" href="https://www.instagram.com/sladent_dentistry_ternopil/" rel="noopener" target="_blank">Instagram</a>, до і після лікування.</p>
+      <h2 class="d2" id="res-title">Результати наших пацієнтів</h2>
+      <p>Фото з нашого <a class="arrow" href="https://www.instagram.com/sladent_dentistry_ternopil/" rel="noopener" target="_blank">Instagram</a>, до і після лікування.</p>
     </div>
-    <figure class="rv" style="margin:0">
+    <figure style="margin:0">
       <div class="ba">
-        <img src="images/photos/whitening-before.jpg" width="1200" height="984" loading="lazy" alt="Зуби до відбілювання: жовтуватий відтінок емалі">
-        <img class="ba__after" src="images/photos/whitening-after.jpg" width="1200" height="984" loading="lazy" alt="Ті самі зуби після відбілювання Magic Smile">
+        <img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/whitening-before.jpg" width="1200" height="984" loading="lazy" alt="Зуби до відбілювання: жовтуватий відтінок емалі">
+        <img class="ba__after fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/whitening-after.jpg" width="1200" height="984" loading="lazy" alt="Ті самі зуби після відбілювання Magic Smile">
         <span class="chip chip--l" aria-hidden="true">До</span><span class="chip chip--r" aria-hidden="true">Після</span>
         <span class="ba__line" aria-hidden="true"></span><span class="ba__knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#111215" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></span>
         <input type="range" min="0" max="100" value="50" aria-label="Порівняти до і після відбілювання">
@@ -241,9 +241,9 @@
       <figcaption class="cap"><b>Відбілювання Magic Smile за одну процедуру.</b> Потягніть повзунок, щоб порівняти.</figcaption>
     </figure>
     <div class="results">
-      <figure class="result rv"><div class="media"><img src="images/photos/case-crowns.jpg" width="1000" height="790" loading="lazy" alt="Цирконієві коронки на моделі щелепи"></div><figcaption class="cap"><b>7 імплантів і 19 цирконієвих коронок.</b> Лікування тривало рік.</figcaption></figure>
-      <figure class="result rv"><div class="media"><img src="images/photos/case-allon6-xray.jpg" width="900" height="1200" loading="lazy" alt="Рентген: зубний ряд на шести імплантах"></div><figcaption class="cap"><b>Усі зуби на шести імплантах.</b> Тимчасову конструкцію поставили через тиждень після операції.</figcaption></figure>
-      <figure class="result rv"><div class="media"><img src="images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="Усмішка після заміни коронок на цирконієві"></div><figcaption class="cap"><b>Нові цирконієві коронки.</b> Власні зуби відбілили під їхній колір.</figcaption></figure>
+      <figure class="result"><div class="media" style="background-color:#a6a090"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/case-crowns.jpg" width="1000" height="790" loading="lazy" alt="Цирконієві коронки на моделі щелепи"></div><figcaption class="cap"><b>7 імплантів і 19 цирконієвих коронок.</b> Лікування тривало рік.</figcaption></figure>
+      <figure class="result"><div class="media" style="background-color:#7a7976"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/case-allon6-xray.jpg" width="900" height="1200" loading="lazy" alt="Рентген: зубний ряд на шести імплантах"></div><figcaption class="cap"><b>Усі зуби на шести імплантах.</b> Тимчасову конструкцію поставили через тиждень після операції.</figcaption></figure>
+      <figure class="result"><div class="media" style="background-color:#977a6f"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="Усмішка після заміни коронок на цирконієві"></div><figcaption class="cap"><b>Нові цирконієві коронки.</b> Власні зуби відбілили під їхній колір.</figcaption></figure>
     </div>
   </div>
 </section>
@@ -252,43 +252,43 @@
   <div class="wrap">
     <div class="reviews-top">
       <div>
-        <h2 class="d2 rv" id="rev-title">Приходять роками. І приводять своїх.</h2>
-        <div class="score rv"><b>4,8</b><div><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><small>93 відгуки на Google</small></div></div>
+        <h2 class="d2" id="rev-title">Приходять роками. І приводять своїх.</h2>
+        <div class="score"><b>4,8</b><div><span class="stars" aria-hidden="true"><i style="--fill:96%"></i></span><small>93 відгуки на Google</small></div></div>
       </div>
-      <blockquote class="quote rv"><p>Послугами лікаря-стоматолога Придатка Ярослава Григоровича користуюся з 90-х років. За стоматологічною усмішкою завжди повертатимуся в клініку SLADENT.</p><footer>Олег Б. · відгук на Google</footer></blockquote>
+      <blockquote class="quote"><p>Послугами лікаря-стоматолога Придатка Ярослава Григоровича користуюся з 90-х років. За стоматологічною усмішкою завжди повертатимуся в клініку SLADENT.</p><footer>Олег Б. · відгук на Google</footer></blockquote>
     </div>
   </div>
-  <div class="marquee rv" aria-label="Відгуки пацієнтів з Google"><div class="marquee__row" style="--dur:80s"><figure class="rcard"><p>Перевірено всією сімʼєю вже впродовж не одного десятка років. Щира рекомендація!</p><footer><b>Tati B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Сподобався зручний графік роботи (приймають до 20:00) і те що не потрібно чекати декілька тижнів своєї черги на прийом (очікування 1-2 дні).</p><footer><b>Святослав Б.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Лікували сьогодні зуб 4-річному сину, щиро дякуємо лікарю Софії Романівні та асистенту, за професійну роботу та гарний настрій!</p><footer><b>Іван М.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Вже коло 10 років всією сім'єю відвідуємо цю стоматологію. Задоволені всім! Ціна відповідає якості.</p><footer><b>Valia S.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Лікар все детально пояснює, працює дуже акуратно і викликає повну довіру.</p><footer><b>Світлана Р.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Робила там 8 зубів, 4 з яких без анестезії. Після лікування порадили як краще доглядати за моїми зубами.</p><footer><b>Yana D.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Як завжди, професійне ведення клієнтів, особистий підхід і якісне надання послуг. Обслуговуємося всією сім'єю більше 10 років.</p><footer><b>Єлизавета Н.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure></div><div class="marquee__row marquee__row--rev" style="--dur:90s"><figure class="rcard"><p>Перед імплантацією трохи хвилювався, але завдяки вашому досвіду, чіткості та злагодженій роботі все пройшло спокійно й значно легше, ніж я очікував.</p><footer><b>Пацієнт після імплантації</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Світлана Карлівна прекрасний лікар, з великим досвідом роботи, професіонал своєї справи.</p><footer><b>Юлія Ч.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Відбілював зуби в стоматології SlaDent, і все пройшло чудово! Результат просто відмінний.</p><footer><b>Sergii K.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Професійні лікарі та привітний персонал. Ірина Василівна чудовий лікар!</p><footer><b>Людмила К.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Ходжу в стоматологію Сладент вже 5 років і раджу своїм друзям і рідним.</p><footer><b>Люба П.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Гарна клініка. Привітний персонал, досвідчені фахівці, приємна атмосфера, ціни адекватні.</p><footer><b>Віктор М.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Перевірено всією сімʼєю вже впродовж не одного десятка років. Щира рекомендація!</p><footer><b>Tati B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure></div></div>
-  <div class="wrap" style="margin-top:2rem"><a class="arrow rv" href="reviews.html">Усі відгуки</a></div>
+  <div class="rrow-wrap"><div class="rrow" tabindex="0" role="region" aria-label="Відгуки пацієнтів з Google"><figure class="rcard"><p>Перевірено всією сімʼєю вже впродовж не одного десятка років. Щира рекомендація!</p><footer><b>Tati B.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Сподобався зручний графік роботи (приймають до 20:00) і те що не потрібно чекати декілька тижнів своєї черги на прийом (очікування 1-2 дні).</p><footer><b>Святослав Б.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Лікували сьогодні зуб 4-річному сину, щиро дякуємо лікарю Софії Романівні та асистенту, за професійну роботу та гарний настрій!</p><footer><b>Іван М.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Вже коло 10 років всією сім'єю відвідуємо цю стоматологію. Задоволені всім! Ціна відповідає якості.</p><footer><b>Valia S.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Лікар все детально пояснює, працює дуже акуратно і викликає повну довіру.</p><footer><b>Світлана Р.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Робила там 8 зубів, 4 з яких без анестезії. Після лікування порадили як краще доглядати за моїми зубами.</p><footer><b>Yana D.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Як завжди, професійне ведення клієнтів, особистий підхід і якісне надання послуг. Обслуговуємося всією сім'єю більше 10 років.</p><footer><b>Єлизавета Н.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Перед імплантацією трохи хвилювався, але завдяки вашому досвіду, чіткості та злагодженій роботі все пройшло спокійно й значно легше, ніж я очікував.</p><footer><b>Пацієнт після імплантації</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Світлана Карлівна прекрасний лікар, з великим досвідом роботи, професіонал своєї справи.</p><footer><b>Юлія Ч.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Відбілював зуби в стоматології SlaDent, і все пройшло чудово! Результат просто відмінний.</p><footer><b>Sergii K.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Професійні лікарі та привітний персонал. Ірина Василівна чудовий лікар!</p><footer><b>Людмила К.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Ходжу в стоматологію Сладент вже 5 років і раджу своїм друзям і рідним.</p><footer><b>Люба П.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure><figure class="rcard"><p>Гарна клініка. Привітний персонал, досвідчені фахівці, приємна атмосфера, ціни адекватні.</p><footer><b>Віктор М.</b><span class="stars" aria-hidden="true"><i style="--fill:100%"></i></span></footer></figure></div><div class="wrap rrow-foot"><span class="small muted">Гортайте вбік</span><div class="rrow-nav"><button type="button" aria-label="Попередні відгуки">←</button><button type="button" aria-label="Наступні відгуки">→</button></div></div></div>
+  <div class="wrap" style="margin-top:2rem"><a class="arrow" href="reviews.html">Усі відгуки</a></div>
 </section>
 
 <section class="sec sec--tone" aria-labelledby="doc-title">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="d2 rv" id="doc-title">Родина лікарів Придатко</h2>
-      <p class="rv">Ярослав Григорович відкрив клініку у 2008 році. Сьогодні разом з ним працюють Юрій Ярославович і Світлана Карлівна Придатко.</p>
+      <h2 class="d2" id="doc-title">Родина лікарів Придатко</h2>
+      <p>Ярослав Григорович відкрив клініку у 2008 році. Сьогодні разом з ним працюють Юрій Ярославович і Світлана Карлівна Придатко.</p>
     </div>
     <div class="people">
-      <article class="person rv"><div class="media"><img src="images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Ярослав Григорович Придатко"></div><h3>Ярослав Григорович Придатко</h3><p class="role">Засновник і головний лікар</p><blockquote>Лікар все детально пояснює, працює дуже акуратно і викликає повну довіру.<footer>Світлана Р., Google</footer></blockquote></article>
-      <article class="person rv"><div class="media"><img src="images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Юрій Ярославович Придатко"></div><h3>Юрій Ярославович Придатко</h3><p class="role">Лікар-стоматолог, хірург-імплантолог</p></article>
-      <article class="person rv"><div class="media"><img src="images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Світлана Карлівна Придатко"></div><h3>Світлана Карлівна Придатко</h3><p class="role">Лікар-стоматолог, лікує дітей</p><blockquote>Світлана Карлівна прекрасний лікар, з великим досвідом роботи, професіонал своєї справи.<footer>Юлія Ч., Google</footer></blockquote></article>
+      <article class="person"><div class="media" style="background-color:#8e8278"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/yaroslav-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Ярослав Григорович Придатко"></div><h3>Ярослав Григорович Придатко</h3><p class="role">Засновник і головний лікар</p><blockquote>Лікар все детально пояснює, працює дуже акуратно і викликає повну довіру.<footer>Світлана Р., Google</footer></blockquote></article>
+      <article class="person"><div class="media" style="background-color:#8e857b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/yurii-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Юрій Ярославович Придатко"></div><h3>Юрій Ярославович Придатко</h3><p class="role">Лікар-стоматолог, хірург-імплантолог</p></article>
+      <article class="person"><div class="media" style="background-color:#877c71"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/team/svitlana-prydatko.jpg" width="960" height="1200" loading="lazy" alt="Світлана Карлівна Придатко"></div><h3>Світлана Карлівна Придатко</h3><p class="role">Лікар-стоматолог, лікує дітей</p><blockquote>Світлана Карлівна прекрасний лікар, з великим досвідом роботи, професіонал своєї справи.<footer>Юлія Ч., Google</footer></blockquote></article>
     </div>
-    <p class="rv more">А також ортодонт Ірина Іванівна Глова, лікарі Ірина Василівна і Софія Романівна Гапій та команда асистентів, медсестер і адміністраторів. <a class="arrow" href="team.html">Уся команда</a></p>
+    <p class="more">А також ортодонт Ірина Іванівна Глова, лікарі Ірина Василівна і Софія Романівна Гапій та команда асистентів, медсестер і адміністраторів. <a class="arrow" href="team.html">Уся команда</a></p>
   </div>
 </section>
 
 <section class="sec" aria-labelledby="team-title">
   <div class="wrap split">
-    <div class="media media--video rv" style="aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="videos/team-poster.jpg" width="720" height="1280" aria-label="Команда Sladent у клініці"><source src="videos/team.mp4" type="video/mp4"></video></div>
+    <div class="media media--video" style="background-color:#797269;aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="videos/team-poster.jpg" width="720" height="1280" aria-label="Команда Sladent у клініці"><source src="videos/team.mp4" type="video/mp4"></video></div>
     <div>
-      <h2 class="d2 rv" id="team-title">Велика команда, одна родина</h2>
-      <p class="lead rv" style="margin-top:1.25rem">Лікарі, асистенти, медсестри й адміністратори. Багато пацієнтів приходять до нас усією сімʼєю роками, тож ми знаємо їх на імʼя.</p>
-      <ul class="ticks rv">
+      <h2 class="d2" id="team-title">Велика команда, одна родина</h2>
+      <p class="lead" style="margin-top:1.25rem">Лікарі, асистенти, медсестри й адміністратори. Багато пацієнтів приходять до нас усією сімʼєю роками, тож ми знаємо їх на імʼя.</p>
+      <ul class="ticks">
         <li><span><b>Без довгих черг.</b> Пацієнт у відгуку пише, що чекав на прийом 1–2 дні.</span></li>
         <li><span><b>Працюємо до 20:00</b> у будні, тож можна прийти після роботи.</span></li>
         <li><span><b>Пояснюємо все</b> перед лікуванням і радимо, як доглядати за зубами після.</span></li>
       </ul>
-      <a class="btn btn--dark rv" href="team.html">Познайомитися з командою</a>
+      <a class="btn btn--dark" href="team.html">Познайомитися з командою</a>
     </div>
   </div>
 </section>
@@ -296,8 +296,8 @@
 
 <section class="sec sec--tight" aria-labelledby="kids-title">
   <div class="wrap">
-    <div class="kids rv">
-      <a class="media" href="kids/" tabindex="-1" aria-hidden="true"><img src="kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt=""></a>
+    <div class="kids">
+      <a class="media" href="kids/" tabindex="-1" aria-hidden="true" style="background-color:#cfc9d4"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt=""></a>
       <div>
         <h2 class="d2" id="kids-title">Дітям тут цікаво</h2>
         <p>Дітей лікуємо з трьох років. Поки ви чекаєте, дитина може погратися в наші ігри або подивитися мультик про Зубика, який іде до лікаря.</p>
@@ -309,7 +309,7 @@
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Запишіться на прийом</h2>
         <p class="lead">Зателефонуйте або залиште заявку на сайті, і адміністратор підбере зручний час.</p>
@@ -327,10 +327,10 @@
 
 <section class="sec sec--tight" aria-labelledby="place-title">
   <div class="wrap">
-    <h2 class="d2 rv" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">Просп. Злуки, 8, Тернопіль</h2>
+    <h2 class="d2" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">Просп. Злуки, 8, Тернопіль</h2>
     <div class="place">
-      <div class="media rv"><img src="images/photos/clinic-outside.jpg" srcset="images/photos/clinic-outside-800.jpg 800w, images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="Команда Sladent біля входу в клініку на просп. Злуки, 8"></div>
-      <div class="media rv"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent на карті: просп. Злуки, 8, Тернопіль" allowfullscreen></iframe></div>
+      <div class="media" style="background-color:#6f7461"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/clinic-outside.jpg" srcset="images/photos/clinic-outside-800.jpg 800w, images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="Команда Sladent біля входу в клініку на просп. Злуки, 8"></div>
+      <div class="media"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent на карті: просп. Злуки, 8, Тернопіль" allowfullscreen></iframe></div>
     </div>
   </div>
 </section>
@@ -338,10 +338,10 @@
 <section class="sec sec--tone" aria-labelledby="faq-title">
   <div class="wrap faq">
     <div>
-      <h2 class="d2 rv" id="faq-title">Часті запитання</h2>
-      <p class="lead rv" style="margin-top:1.25rem">Не знайшли відповіді? Зателефонуйте, адміністратор підкаже: <a class="arrow" href="tel:+380979351535">+380 97 935 15 35</a></p>
+      <h2 class="d2" id="faq-title">Часті запитання</h2>
+      <p class="lead" style="margin-top:1.25rem">Не знайшли відповіді? Зателефонуйте, адміністратор підкаже: <a class="arrow" href="tel:+380979351535">+380 97 935 15 35</a></p>
     </div>
-    <div class="faq__list"><details class="rv"><summary>Чи приймаєте ви нових пацієнтів?</summary><div><p>Так. Записатися можна за телефоном <a href="tel:+380979351535">+380 97 935 15 35</a>, через <a href="contact.html#booking-form">форму на сайті</a> або в клініці. Перша консультація включає огляд і діагностику.</p></div></details><details class="rv"><summary>Які способи оплати ви приймаєте?</summary><div><p>Готівку, банківські картки (Visa, Mastercard) і безготівковий розрахунок.</p></div></details><details class="rv"><summary>Скільки триває прийом?</summary><div><p>Консультація триває 30–45 хвилин, професійна чистка близько години, імплантація чи протезування від 1,5 до 3 годин.</p></div></details><details class="rv"><summary>Чи лікуєте дітей?</summary><div><p>Так, з трьох років. Поки ви чекаєте, дитина може погратися в <a href="kids/">наші ігри або подивитися мультик</a>.</p></div></details><details class="rv"><summary>Чи є паркування?</summary><div><p>Так, біля клініки є безкоштовна парковка для пацієнтів. Сюди зручно доїхати і громадським транспортом.</p></div></details><details class="rv"><summary>Що взяти на перший прийом?</summary><div><p>Документ, що посвідчує особу, і медичну картку, якщо є. Якщо маєте рентгенівські знімки чи висновки інших лікарів, візьміть їх теж.</p></div></details></div>
+    <div class="faq__list"><details><summary>Чи приймаєте ви нових пацієнтів?</summary><div><p>Так. Записатися можна за телефоном <a href="tel:+380979351535">+380 97 935 15 35</a>, через <a href="contact.html#booking-form">форму на сайті</a> або в клініці. Перша консультація включає огляд і діагностику.</p></div></details><details><summary>Які способи оплати ви приймаєте?</summary><div><p>Готівку, банківські картки (Visa, Mastercard) і безготівковий розрахунок.</p></div></details><details><summary>Скільки триває прийом?</summary><div><p>Консультація триває 30–45 хвилин, професійна чистка близько години, імплантація чи протезування від 1,5 до 3 годин.</p></div></details><details><summary>Чи лікуєте дітей?</summary><div><p>Так, з трьох років. Поки ви чекаєте, дитина може погратися в <a href="kids/">наші ігри або подивитися мультик</a>.</p></div></details><details><summary>Чи є паркування?</summary><div><p>Так, біля клініки є безкоштовна парковка для пацієнтів. Сюди зручно доїхати і громадським транспортом.</p></div></details><details><summary>Що взяти на перший прийом?</summary><div><p>Документ, що посвідчує особу, і медичну картку, якщо є. Якщо маєте рентгенівські знімки чи висновки інших лікарів, візьміть їх теж.</p></div></details></div>
   </div>
 </section>
 

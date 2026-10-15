@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="images/icon.ico">
   <link rel="apple-touch-icon" href="images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="site.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -53,49 +53,49 @@
 <main id="main">
 <section class="phero" aria-labelledby="t">
   <div class="wrap phero__row">
-    <h1 class="d1 rv" id="t">Родинна клініка з 2008 року</h1>
-    <p class="lead rv">Sladent — це стоматологія родини Придатко на просп. Злуки, 8 у Тернополі. Один з пацієнтів лікується у Ярослава Григоровича ще з 90-х.</p>
+    <h1 class="d1" id="t">Родинна клініка з 2008 року</h1>
+    <p class="lead">Sladent — це стоматологія родини Придатко на просп. Злуки, 8 у Тернополі. Один з пацієнтів лікується у Ярослава Григоровича ще з 90-х.</p>
   </div>
 </section>
 <section aria-label="Команда">
-  <div class="wrap"><div class="media rv" style="aspect-ratio:16/8"><img src="images/photos/team-sofa-2.jpg" srcset="images/photos/team-sofa-2-800.jpg 800w, images/photos/team-sofa-2-1300.jpg 1300w, images/photos/team-sofa-2.jpg 2000w" sizes="(max-width: 1400px) 100vw, 1300px" width="2000" height="1333" loading="lazy" alt="Уся команда Sladent у клініці"></div>
+  <div class="wrap"><div class="media" style="background-color:#ada6a0;aspect-ratio:16/8"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/team-sofa-2.jpg" srcset="images/photos/team-sofa-2-800.jpg 800w, images/photos/team-sofa-2-1300.jpg 1300w, images/photos/team-sofa-2.jpg 2000w" sizes="(max-width: 1400px) 100vw, 1300px" width="2000" height="1333" loading="lazy" alt="Уся команда Sladent у клініці"></div>
     <div class="facts">
-      <div class="fact rv"><b>2008</b><span>рік, коли родина Придатко відкрила клініку</span></div>
-      <div class="fact rv"><b>4,8</b><span>середня оцінка з 93 відгуків на Google</span></div>
-      <div class="fact rv"><b>до 20:00</b><span>приймаємо в будні, у суботу до 15:00</span></div>
-      <div class="fact rv"><b>з 3 років</b><span>лікуємо дітей, а поки чекаєте, є ігри й мультики</span></div>
+      <div class="fact"><b>2008</b><span>рік, коли родина Придатко відкрила клініку</span></div>
+      <div class="fact"><b>4,8</b><span>середня оцінка з 93 відгуків на Google</span></div>
+      <div class="fact"><b>до 20:00</b><span>приймаємо в будні, у суботу до 15:00</span></div>
+      <div class="fact"><b>з 3 років</b><span>лікуємо дітей, а поки чекаєте, є ігри й мультики</span></div>
     </div>
   </div>
 </section>
 <section class="sec" aria-labelledby="story-t">
   <div class="wrap split">
     <div>
-      <h2 class="d2 rv" id="story-t">Як усе починалося</h2>
-      <div class="prose rv" style="margin-top:1.5rem">
+      <h2 class="d2" id="story-t">Як усе починалося</h2>
+      <div class="prose" style="margin-top:1.5rem">
         <p><strong>Стоматологію родини Придатко</strong> заснував у 2008 році Ярослав Григорович Придатко. Сюди від початку приходили цілими родинами, і багато сімей лікуються тут досі.</p>
         <p>Клініка росла, і разом з нею зросла команда. Сьогодні з Ярославом Григоровичем працюють Юрій Ярославович і Світлана Карлівна Придатко, інші лікарі, ортодонт, асистенти, медсестри й адміністратори.</p>
         <p><strong>Sladent</strong> — сучасна назва тієї самої родинної клініки. Ті самі люди, той самий підхід.</p>
       </div>
     </div>
-    <div class="media media--video rv" style="aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="videos/team-poster.jpg" width="720" height="1280" aria-label="Команда Sladent у клініці"><source src="videos/team.mp4" type="video/mp4"></video></div>
+    <div class="media media--video" style="background-color:#797269;aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="videos/team-poster.jpg" width="720" height="1280" aria-label="Команда Sladent у клініці"><source src="videos/team.mp4" type="video/mp4"></video></div>
   </div>
 </section>
 <section class="sec sec--tone" aria-labelledby="val-t">
   <div class="wrap">
-    <h2 class="d2 rv" id="val-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Чому до нас повертаються</h2>
-    <div class="values"><article class="rv"><h3 class="d3">Сімейна клініка</h3><p>Клініку заснувала родина лікарів Придатко, і вона досі працює тут щодня. Багато пацієнтів приходять до нас усією сімʼєю роками.</p></article><article class="rv"><h3 class="d3">Пояснюємо все</h3><p>Перед лікуванням лікар пояснює, що і навіщо робитиме, а після радить, як доглядати за зубами.</p></article><article class="rv"><h3 class="d3">Діти без страху</h3><p>Дітей лікуємо з трьох років і не поспішаємо. Поки ви чекаєте, є ігри й мультики про Зубика.</p></article><article class="rv"><h3 class="d3">Усе в одній клініці</h3><p>Лікування, гігієна, естетика, ортодонтія, хірургія та імплантація. Вам не треба шукати різних лікарів по місту.</p></article><article class="rv"><h3 class="d3">Зручний графік</h3><p>У будні працюємо до 20:00, у суботу до 15:00, тож на прийом можна прийти після роботи.</p></article><article class="rv"><h3 class="d3">Велика команда</h3><p>Лікарі, асистенти, медсестри й адміністратори, які знають пацієнтів на імʼя.</p></article></div>
+    <h2 class="d2" id="val-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">Чому до нас повертаються</h2>
+    <div class="values"><article><h3 class="d3">Сімейна клініка</h3><p>Клініку заснувала родина лікарів Придатко, і вона досі працює тут щодня. Багато пацієнтів приходять до нас усією сімʼєю роками.</p></article><article><h3 class="d3">Пояснюємо все</h3><p>Перед лікуванням лікар пояснює, що і навіщо робитиме, а після радить, як доглядати за зубами.</p></article><article><h3 class="d3">Діти без страху</h3><p>Дітей лікуємо з трьох років і не поспішаємо. Поки ви чекаєте, є ігри й мультики про Зубика.</p></article><article><h3 class="d3">Усе в одній клініці</h3><p>Лікування, гігієна, естетика, ортодонтія, хірургія та імплантація. Вам не треба шукати різних лікарів по місту.</p></article><article><h3 class="d3">Зручний графік</h3><p>У будні працюємо до 20:00, у суботу до 15:00, тож на прийом можна прийти після роботи.</p></article><article><h3 class="d3">Велика команда</h3><p>Лікарі, асистенти, медсестри й адміністратори, які знають пацієнтів на імʼя.</p></article></div>
   </div>
 </section>
 <section class="sec" aria-labelledby="q-t">
   <div class="wrap reviews-top" style="margin-bottom:0">
-    <h2 class="d2 rv" id="q-t">Що кажуть пацієнти</h2>
-    <blockquote class="quote rv"><p>Перевірено всією сімʼєю вже впродовж не одного десятка років. Щира рекомендація!</p><footer>Tati B. · відгук на Google · <a class="arrow" href="reviews.html">Усі відгуки</a></footer></blockquote>
+    <h2 class="d2" id="q-t">Що кажуть пацієнти</h2>
+    <blockquote class="quote"><p>Перевірено всією сімʼєю вже впродовж не одного десятка років. Щира рекомендація!</p><footer>Tati B. · відгук на Google · <a class="arrow" href="reviews.html">Усі відгуки</a></footer></blockquote>
   </div>
 </section>
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Запишіться на прийом</h2>
         <p class="lead">Зателефонуйте або залиште заявку на сайті, і адміністратор підбере зручний час.</p>
@@ -113,10 +113,10 @@
 
 <section class="sec sec--tight" aria-labelledby="place-title">
   <div class="wrap">
-    <h2 class="d2 rv" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">Просп. Злуки, 8, Тернопіль</h2>
+    <h2 class="d2" id="place-title" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">Просп. Злуки, 8, Тернопіль</h2>
     <div class="place">
-      <div class="media rv"><img src="images/photos/clinic-outside.jpg" srcset="images/photos/clinic-outside-800.jpg 800w, images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="Команда Sladent біля входу в клініку на просп. Злуки, 8"></div>
-      <div class="media rv"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent на карті: просп. Злуки, 8, Тернопіль" allowfullscreen></iframe></div>
+      <div class="media" style="background-color:#6f7461"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="images/photos/clinic-outside.jpg" srcset="images/photos/clinic-outside-800.jpg 800w, images/photos/clinic-outside.jpg 1800w" sizes="(max-width: 900px) 100vw, 45vw" width="1800" height="2149" loading="lazy" alt="Команда Sladent біля входу в клініку на просп. Злуки, 8"></div>
+      <div class="media"><iframe src="https://www.google.com/maps?q=%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%97%D0%BB%D1%83%D0%BA%D0%B8+8,+%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sladent на карті: просп. Злуки, 8, Тернопіль" allowfullscreen></iframe></div>
     </div>
   </div>
 </section>

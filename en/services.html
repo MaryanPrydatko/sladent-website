@@ -22,8 +22,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../images/icon.ico">
   <link rel="apple-touch-icon" href="../images/logo-removebg-preview.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="../fonts/geist-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../site.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
@@ -53,86 +53,86 @@
 <main id="main">
 <section class="phero" aria-labelledby="t">
   <div class="wrap">
-    <h1 class="d1 rv" id="t">What we treat</h1>
-    <p class="lead rv">From a routine check-up to a full set of implants. All in one clinic, with doctors who know your history.</p>
-    <nav class="jump rv" aria-label="On this page"><a href="#implants">Implants</a><a href="#cosmetic">Aesthetics</a><a href="#general">Fillings</a><a href="#orthodontics">Orthodontics</a><a href="#pediatric">Children</a><a href="#hygiene">Hygiene</a><a href="#more">Prosthetics and surgery</a></nav>
+    <h1 class="d1" id="t">What we treat</h1>
+    <p class="lead">From a routine check-up to a full set of implants. All in one clinic, with doctors who know your history.</p>
+    <nav class="jump" aria-label="On this page"><a href="#implants">Implants</a><a href="#cosmetic">Aesthetics</a><a href="#general">Fillings</a><a href="#orthodontics">Orthodontics</a><a href="#pediatric">Children</a><a href="#hygiene">Hygiene</a><a href="#more">Prosthetics and surgery</a></nav>
   </div>
 </section>
 
 <section class="wrap svc" id="implants" aria-labelledby="implants-t">
-  <div class="media media--video rv" style="aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="../videos/surgery-poster.jpg" width="720" height="1280" aria-label="Sladent doctors during surgery"><source src="../videos/surgery.mp4" type="video/mp4"></video></div>
+  <div class="media media--video" style="background-color:#6f706f;aspect-ratio:4/5"><video data-loop muted playsinline loop preload="none" poster="../videos/surgery-poster.jpg" width="720" height="1280" aria-label="Sladent doctors during surgery"><source src="../videos/surgery.mp4" type="video/mp4"></video></div>
   <div>
-    <h2 class="d2 rv" id="implants-t">Dental implants</h2>
-    <p class="lead rv">Implants replace missing teeth, from one tooth to a full arch. Implant surgery is done by Dr. Yurii Prydatko.</p>
-    <ul class="ticks rv"><li><span><b>A single implant</b> for one missing tooth</span></li><li><span><b>Several implants</b> when a few teeth in a row are missing</span></li><li><span><b>A full arch on six implants</b> (All-on-6) when few teeth remain</span></li><li><span><b>Bone grafting and sinus lift</b> when there is not enough bone</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Book a consultation</a></div>
-    <blockquote class="note rv">I was a little nervous before the implant, but thanks to your experience and well-coordinated work it went calmly and much easier than I expected.<footer>Implant patient, Google review (translated)</footer></blockquote>
+    <h2 class="d2" id="implants-t">Dental implants</h2>
+    <p class="lead">Implants replace missing teeth, from one tooth to a full arch. Implant surgery is done by Dr. Yurii Prydatko.</p>
+    <ul class="ticks"><li><span><b>A single implant</b> for one missing tooth</span></li><li><span><b>Several implants</b> when a few teeth in a row are missing</span></li><li><span><b>A full arch on six implants</b> (All-on-6) when few teeth remain</span></li><li><span><b>Bone grafting and sinus lift</b> when there is not enough bone</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Book a consultation</a></div>
+    <blockquote class="note">I was a little nervous before the implant, but thanks to your experience and well-coordinated work it went calmly and much easier than I expected.<footer>Implant patient, Google review (translated)</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc svc--flip" id="cosmetic" aria-labelledby="cosmetic-t">
-  <div class="media rv"><img src="../images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="A smile after old crowns were replaced with zirconia"></div>
+  <div class="media" style="background-color:#977a6f"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/case-zirconia.jpg" width="1000" height="1000" loading="lazy" alt="A smile after old crowns were replaced with zirconia"></div>
   <div>
-    <h2 class="d2 rv" id="cosmetic-t">Aesthetics and whitening</h2>
-    <p class="lead rv">Whiter teeth, an even colour, new crowns instead of old ones. We match everything so the result looks natural.</p>
-    <ul class="ticks rv"><li><span><b>Magic Smile whitening</b> in one visit</span></li><li><span><b>Veneers</b> to change the shape and colour of front teeth</span></li><li><span><b>Zirconia crowns</b> to replace old crowns</span></li><li><span><b>Aesthetic restorations</b>: old fillings replaced with invisible ones</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Book a consultation</a></div>
-    <blockquote class="note rv">I had my teeth whitened at SlaDent and it went great. The result is excellent.<footer>Sergii K., Google review (translated)</footer></blockquote>
+    <h2 class="d2" id="cosmetic-t">Aesthetics and whitening</h2>
+    <p class="lead">Whiter teeth, an even colour, new crowns instead of old ones. We match everything so the result looks natural.</p>
+    <ul class="ticks"><li><span><b>Magic Smile whitening</b> in one visit</span></li><li><span><b>Veneers</b> to change the shape and colour of front teeth</span></li><li><span><b>Zirconia crowns</b> to replace old crowns</span></li><li><span><b>Aesthetic restorations</b>: old fillings replaced with invisible ones</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Book a consultation</a></div>
+    <blockquote class="note">I had my teeth whitened at SlaDent and it went great. The result is excellent.<footer>Sergii K., Google review (translated)</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc" id="general" aria-labelledby="general-t">
-  <div class="media rv"><img src="../images/photos/work-9368.jpg" srcset="../images/photos/work-9368-800.jpg 800w, ../images/photos/work-9368.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" width="1600" height="2133" loading="lazy" alt="Sladent doctors treating a patient"></div>
+  <div class="media" style="background-color:#67676b"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/work-9368.jpg" srcset="../images/photos/work-9368-800.jpg 800w, ../images/photos/work-9368.jpg 1600w" sizes="(max-width: 900px) 100vw, 50vw" width="1600" height="2133" loading="lazy" alt="Sladent doctors treating a patient"></div>
   <div>
-    <h2 class="d2 rv" id="general-t">Fillings and root canals</h2>
-    <p class="lead rv">We treat cavities and inflamed nerves, place fillings and rebuild broken teeth. First an examination and a plan, then treatment.</p>
-    <ul class="ticks rv"><li><span><b>Examination and treatment plan</b> at your first visit</span></li><li><span><b>Cavity treatment</b> and fillings</span></li><li><span><b>Root canal treatment</b> to save the tooth</span></li><li><span><b>Rebuilding a broken tooth</b></span></li><li><span><b>Extractions</b> when a tooth cannot be saved</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Book a consultation</a></div>
-    <blockquote class="note rv">Special thanks to Maksym Petrovych, a true professional, especially at restoring the shape of teeth. He restored my tooth perfectly, quickly and painlessly.<footer>Sviatoslav B., Google review (translated)</footer></blockquote>
+    <h2 class="d2" id="general-t">Fillings and root canals</h2>
+    <p class="lead">We treat cavities and inflamed nerves, place fillings and rebuild broken teeth. First an examination and a plan, then treatment.</p>
+    <ul class="ticks"><li><span><b>Examination and treatment plan</b> at your first visit</span></li><li><span><b>Cavity treatment</b> and fillings</span></li><li><span><b>Root canal treatment</b> to save the tooth</span></li><li><span><b>Rebuilding a broken tooth</b></span></li><li><span><b>Extractions</b> when a tooth cannot be saved</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Book a consultation</a></div>
+    <blockquote class="note">Special thanks to Maksym Petrovych, a true professional, especially at restoring the shape of teeth. He restored my tooth perfectly, quickly and painlessly.<footer>Sviatoslav B., Google review (translated)</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc svc--flip" id="orthodontics" aria-labelledby="orthodontics-t">
-  <div class="media rv"><img src="../images/photos/ortho-brackets.jpg" width="720" height="756" loading="lazy" alt="A bracket kit at the clinic before fitting"></div>
+  <div class="media" style="background-color:#afb0b4"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/ortho-brackets.jpg" width="720" height="756" loading="lazy" alt="A bracket kit at the clinic before fitting"></div>
   <div>
-    <h2 class="d2 rv" id="orthodontics-t">Orthodontics</h2>
-    <p class="lead rv">We straighten teeth and correct bites for children and adults. Treatment is led by orthodontist Dr. Iryna Hlova.</p>
-    <ul class="ticks rv"><li><span><b>Braces</b> for children and adults</span></li><li><span><b>Aligners</b>, clear trays instead of braces</span></li><li><span><b>Early treatment for children</b> while the bite is still forming</span></li><li><span><b>Retainers</b> to keep teeth straight after treatment</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Book with the orthodontist</a></div>
+    <h2 class="d2" id="orthodontics-t">Orthodontics</h2>
+    <p class="lead">We straighten teeth and correct bites for children and adults. Treatment is led by orthodontist Dr. Iryna Hlova.</p>
+    <ul class="ticks"><li><span><b>Braces</b> for children and adults</span></li><li><span><b>Aligners</b>, clear trays instead of braces</span></li><li><span><b>Early treatment for children</b> while the bite is still forming</span></li><li><span><b>Retainers</b> to keep teeth straight after treatment</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Book with the orthodontist</a></div>
     
   </div>
 </section>
 <section class="wrap svc" id="pediatric" aria-labelledby="pediatric-t">
-  <div class="media rv" style="aspect-ratio:16/11"><img src="../kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt="A still from the Sladent cartoon: Zubyk sits bravely in the chair"></div>
+  <div class="media" style="background-color:#cfc9d4;aspect-ratio:16/11"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt="A still from the Sladent cartoon: Zubyk sits bravely in the chair"></div>
   <div>
-    <h2 class="d2 rv" id="pediatric-t">Children’s dentistry</h2>
-    <p class="lead rv">We treat children from age three. We take our time so the child gets used to the doctor and comes back without fear.</p>
-    <ul class="ticks rv"><li><span><b>A first check-up</b> and a look around the room</span></li><li><span><b>Treating baby teeth</b></span></li><li><span><b>Fissure sealants</b> and fluoride against cavities</span></li><li><span><b>Brushing lessons</b> as a game</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Book for a child</a><a class="btn btn--soft" href="../kids/">Games and cartoons</a></div>
-    <blockquote class="note rv">Today they treated a tooth for our 4-year-old son. Many thanks to Dr. Sofiia Romanivna and the assistant for the professional work and the good mood!<footer>Ivan M., Google review (translated)</footer></blockquote>
+    <h2 class="d2" id="pediatric-t">Children’s dentistry</h2>
+    <p class="lead">We treat children from age three. We take our time so the child gets used to the doctor and comes back without fear.</p>
+    <ul class="ticks"><li><span><b>A first check-up</b> and a look around the room</span></li><li><span><b>Treating baby teeth</b></span></li><li><span><b>Fissure sealants</b> and fluoride against cavities</span></li><li><span><b>Brushing lessons</b> as a game</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Book for a child</a><a class="btn btn--soft" href="../kids/">Games and cartoons</a></div>
+    <blockquote class="note">Today they treated a tooth for our 4-year-old son. Many thanks to Dr. Sofiia Romanivna and the assistant for the professional work and the good mood!<footer>Ivan M., Google review (translated)</footer></blockquote>
   </div>
 </section>
 <section class="wrap svc svc--flip" id="hygiene" aria-labelledby="hygiene-t">
-  <div class="media rv"><img src="../images/photos/hygiene-tools.jpg" width="686" height="720" loading="lazy" alt="Sterile instruments laid out before a visit"></div>
+  <div class="media" style="background-color:#6a7276"><img class="fade" onload="this.classList.add('ok')" onerror="this.classList.add('ok')" src="../images/photos/hygiene-tools.jpg" width="686" height="720" loading="lazy" alt="Sterile instruments laid out before a visit"></div>
   <div>
-    <h2 class="d2 rv" id="hygiene-t">Professional hygiene</h2>
-    <p class="lead rv">Regular cleaning keeps teeth and gums healthy and catches problems early. We recommend coming every six months.</p>
-    <ul class="ticks rv"><li><span><b>Ultrasonic cleaning</b> to remove tartar</span></li><li><span><b>Stain and plaque removal</b></span></li><li><span><b>Polishing</b> and fluoride</span></li><li><span><b>Gum care</b> and treating inflammation</span></li></ul>
-    <div class="svc__btns rv"><a class="btn btn--red" href="contact.html#booking-form">Book a cleaning</a></div>
+    <h2 class="d2" id="hygiene-t">Professional hygiene</h2>
+    <p class="lead">Regular cleaning keeps teeth and gums healthy and catches problems early. We recommend coming every six months.</p>
+    <ul class="ticks"><li><span><b>Ultrasonic cleaning</b> to remove tartar</span></li><li><span><b>Stain and plaque removal</b></span></li><li><span><b>Polishing</b> and fluoride</span></li><li><span><b>Gum care</b> and treating inflammation</span></li></ul>
+    <div class="svc__btns"><a class="btn btn--red" href="contact.html#booking-form">Book a cleaning</a></div>
     
   </div>
 </section>
 <section class="sec sec--tone" id="more" aria-labelledby="more-t">
   <div class="wrap">
-    <h2 class="d2 rv" id="more-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">We also do</h2>
+    <h2 class="d2" id="more-t" style="margin-bottom:clamp(1.75rem,3.5vw,3rem)">We also do</h2>
     <div class="extra">
-      <article class="rv"><h3 class="d3">Prosthetics</h3><p>Crowns, bridges and dentures to restore how your teeth look and work.</p></article>
-      <article class="rv"><h3 class="d3">Oral surgery</h3><p>Extractions, including wisdom teeth, and preparation for implants.</p></article>
-      <article class="rv"><h3 class="d3">Gum treatment</h3><p>We treat inflamed and bleeding gums to help you keep your teeth.</p></article>
+      <article><h3 class="d3">Prosthetics</h3><p>Crowns, bridges and dentures to restore how your teeth look and work.</p></article>
+      <article><h3 class="d3">Oral surgery</h3><p>Extractions, including wisdom teeth, and preparation for implants.</p></article>
+      <article><h3 class="d3">Gum treatment</h3><p>We treat inflamed and bleeding gums to help you keep your teeth.</p></article>
     </div>
   </div>
 </section>
 
 <section class="sec sec--tight" aria-labelledby="book-title">
   <div class="wrap">
-    <div class="panel rv">
+    <div class="panel">
       <div>
         <h2 class="d2" id="book-title">Book an appointment</h2>
         <p class="lead">Call us or leave a request on the site and our administrator will find a time that suits you.</p>

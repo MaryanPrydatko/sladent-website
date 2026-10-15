@@ -65,10 +65,18 @@
     set();
   });
 
-  // Review strip: duplicate each row so the loop is seamless
-  document.querySelectorAll('.marquee__row').forEach((row) => {
-    if (reduce) return;
-    [...row.children].forEach((c) => { const k = c.cloneNode(true); k.setAttribute('aria-hidden', 'true'); row.appendChild(k); });
+  // Review row: arrow buttons scroll one card; disabled at either end
+  document.querySelectorAll('.rrow-wrap').forEach((wrap) => {
+    const row = wrap.querySelector('.rrow');
+    const [prev, next] = wrap.querySelectorAll('.rrow-nav button');
+    if (!row || !prev || !next) return;
+    const step = () => (row.querySelector('.rcard')?.getBoundingClientRect().width || 300) + 16;
+    const sync = () => { const half = step() / 2; prev.disabled = row.scrollLeft < half; next.disabled = row.scrollLeft + row.clientWidth > row.scrollWidth - half; };
+    prev.addEventListener('click', () => row.scrollBy({ left: -step(), behavior: reduce ? 'auto' : 'smooth' }));
+    next.addEventListener('click', () => row.scrollBy({ left: step(), behavior: reduce ? 'auto' : 'smooth' }));
+    row.addEventListener('scroll', sync, { passive: true });
+    addEventListener('resize', sync);
+    sync();
   });
 
   // Background loops: play only when visible, never with reduced motion
@@ -78,20 +86,4 @@
     vids.forEach((v) => { v.muted = true; vio.observe(v); });
   }
 
-  // Reveal the parts of each section once, staggered
-  const items = document.querySelectorAll('.rv');
-  if (reduce || !('IntersectionObserver' in window)) { items.forEach((el) => el.classList.add('in')); return; }
-  const count = new WeakMap();
-  const io = new IntersectionObserver((es) => {
-    es.filter((e) => e.isIntersecting).forEach((e) => {
-      const host = e.target.closest('section, footer') || document.body;
-      const n = count.get(host) || 0;
-      count.set(host, n + 1);
-      e.target.style.setProperty('--d', `${Math.min(n, 6) * 70}ms`);
-      e.target.classList.add('in');
-      io.unobserve(e.target);
-    });
-  }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
-  items.forEach((el) => io.observe(el));
-  addEventListener('beforeprint', () => items.forEach((el) => el.classList.add('in')));
 })();
