@@ -57,12 +57,35 @@
   paint();
   setInterval(paint, 60000);
 
-  // Before / after: the range input drives the split, so keyboard and touch both work
+  // Before / after: follow the finger (or mouse) anywhere on the photo. A hidden range
+  // input keeps keyboard and screen-reader control. touch-action: pan-y in the CSS lets a
+  // vertical swipe scroll the page while a sideways drag moves the divider.
   document.querySelectorAll('.ba').forEach((ba) => {
     const input = ba.querySelector('input');
-    const set = () => ba.style.setProperty('--pos', `${input.value}%`);
-    input.addEventListener('input', set);
-    set();
+    let raf = 0, next = null, dragging = false;
+    const apply = () => { raf = 0; ba.style.setProperty('--pos', `${next}%`); input.value = next; };
+    const set = (v) => { next = Math.round(Math.max(0, Math.min(100, v)) * 10) / 10; if (!raf) raf = requestAnimationFrame(apply); };
+    const at = (x) => { const r = ba.getBoundingClientRect(); return ((x - r.left) / r.width) * 100; };
+    // Mouse drags at once. Touch waits to see the direction: sideways moves the divider,
+    // up or down is left to the page scroll, and a tap without movement jumps to that spot.
+    let pending = false, sx = 0, sy = 0;
+    const grab = (e) => { dragging = true; pending = false; try { ba.setPointerCapture(e.pointerId); } catch (_) {} };
+    ba.addEventListener('pointerdown', (e) => {
+      if (e.button > 0) return;
+      sx = e.clientX; sy = e.clientY;
+      if (e.pointerType === 'mouse') { grab(e); set(at(e.clientX)); } else { pending = true; }
+    });
+    ba.addEventListener('pointermove', (e) => {
+      if (pending) {
+        const dx = Math.abs(e.clientX - sx), dy = Math.abs(e.clientY - sy);
+        if (dx > 6 && dx > dy) grab(e); else if (dy > 6) pending = false;
+      }
+      if (dragging) set(at(e.clientX));
+    });
+    ba.addEventListener('pointerup', (e) => { if (pending) set(at(e.clientX)); pending = false; dragging = false; });
+    ['pointercancel', 'lostpointercapture'].forEach((t) => ba.addEventListener(t, () => { pending = false; dragging = false; }));
+    input.addEventListener('input', () => set(+input.value));
+    set(+input.value);
   });
 
   // Review row: arrow buttons scroll one card; disabled at either end
