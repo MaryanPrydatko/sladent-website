@@ -5,7 +5,7 @@
   <!-- Ukrainian (primary) -->
   <url>
     <loc>https://sladent.com/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/"/>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://sladent.com/about.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/about.html"/>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://sladent.com/services.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/services.html"/>
@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://sladent.com/team.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/team.html"/>
@@ -41,7 +41,7 @@
   </url>
   <url>
     <loc>https://sladent.com/reviews.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/reviews.html"/>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://sladent.com/contact.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/contact.html"/>
@@ -61,7 +61,7 @@
   <!-- English (alternate) -->
   <url>
     <loc>https://sladent.com/en/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/"/>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://sladent.com/en/about.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/about.html"/>
@@ -79,7 +79,7 @@
   </url>
   <url>
     <loc>https://sladent.com/en/services.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/services.html"/>
@@ -88,7 +88,7 @@
   </url>
   <url>
     <loc>https://sladent.com/en/team.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/team.html"/>
@@ -97,7 +97,7 @@
   </url>
   <url>
     <loc>https://sladent.com/en/reviews.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/reviews.html"/>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://sladent.com/en/contact.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sladent.com/contact.html"/>
@@ -115,7 +115,7 @@
   </url>
   <url>
     <loc>https://sladent.com/kids/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

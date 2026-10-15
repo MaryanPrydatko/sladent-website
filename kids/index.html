@@ -70,6 +70,7 @@
   .btn svg { width: 22px; height: 22px; flex: none; }
   .btn.icon { padding: 0; width: 48px; }
   a.btn { text-decoration: none; }
+  .credits { font: 700 13px/1.45 var(--body); color: var(--ink); opacity: 0.6; text-align: center; margin: 14px auto 4px; max-width: 46ch; }
   .btn.primary { background: var(--pink); color: var(--card); }
   @media (max-width: 700px) { .btn .lbl { display: none; } .btn.has-lbl { padding: 0; width: 48px; } }
 
@@ -302,6 +303,7 @@
     <section id="toons" class="screen" hidden>
       <div class="hud"><button class="btn has-lbl" id="tback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg><span class="lbl">Назад</span></button><div class="title" id="ttitle">Мультики</div></div>
       <div class="vlist" id="vlist"></div>
+      <p class="credits">Мультики створені за допомогою штучного інтелекту (HyperFrames). Музика: HeyGen, згенерована ШІ.</p>
       <div class="player" id="player" hidden><video id="vid" controls playsinline preload="metadata"></video></div>
     </section>
 

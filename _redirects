@@ -2,5 +2,5 @@
 # Without this, Google may keep indexing sladent.netlify.app alongside sladent.com.
 https://sladent.netlify.app/*    https://sladent.com/:splat    301!
 http://sladent.netlify.app/*     https://sladent.com/:splat    301!
-# Kids games: serves sladent.com/kids at games.sladent.com once that domain is added to this Netlify site.
-https://games.sladent.com/*      /kids/:splat                  200!
+# The page generator lives in the repo but is not part of the site.
+/build.py    /404.html    404!
