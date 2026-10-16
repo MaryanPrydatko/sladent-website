@@ -506,7 +506,7 @@ def kids_card(lang):
       <a class="media" href="{p}kids/" tabindex="-1" aria-hidden="true"><img src="{p}kids/videos/visit-poster.jpg" width="1280" height="720" loading="lazy" alt=""></a>
       <div>
         <h2 class="d2" id="kids-title">{x('Дітям тут цікаво', 'Kids like it here')}</h2>
-        <p>{x('Дітей лікуємо з трьох років. Поки ви чекаєте, дитина може погратися в наші ігри або подивитися мультик про Зубика, який іде до лікаря.', 'We treat children from age three. While you wait, your child can play our games or watch a cartoon about Zubyk the tooth visiting the dentist.')}</p>
+        <p>{x('Дітей лікуємо з трьох років. Поки ви чекаєте, дитина може погратися в наші ігри або подивитися мультик про Зубчика, який іде до лікаря.', 'We treat children from age three. While you wait, your child can play our games or watch a cartoon about Zubchyk the tooth visiting the dentist.')}</p>
         <div class="btns"><a class="btn btn--kids" href="{p}kids/">{x('Ігри та мультики', 'Games and cartoons')}</a><a class="btn btn--white" href="{BOOK}">{x('Записати дитину', 'Book for a child')}</a></div>
       </div>
     </div>
@@ -599,7 +599,7 @@ def page_services(lang):
          x("<b>Ортодонтія для дітей</b>, коли прикус ще формується", "<b>Early treatment for children</b> while the bite is still forming"),
          x("<b>Ретейнери</b>, щоб зуби залишились рівними після лікування", "<b>Retainers</b> to keep teeth straight after treatment")],
         cta=x("Записатися до ортодонта", "Book with the orthodontist"), flip=True)
-    html += svc(lang, "pediatric", img(f"{p}kids/videos/visit-poster.jpg", 1280, 720, x("Кадр з мультика Sladent: Зубик сміливо сидить у кріслі", "A still from the Sladent cartoon: Zubyk sits bravely in the chair"), style="aspect-ratio:16/11"),
+    html += svc(lang, "pediatric", img(f"{p}kids/videos/visit-poster.jpg", 1280, 720, x("Кадр з мультика Sladent: Зубчик сміливо сидить у кріслі", "A still from the Sladent cartoon: Zubchyk sits bravely in the chair"), style="aspect-ratio:16/11"),
         x("Дитяча стоматологія", "Children’s dentistry"),
         x("Лікуємо дітей з трьох років. Не поспішаємо: дитина має звикнути до лікаря, щоб наступного разу йти без страху.", "We treat children from age three. We take our time so the child gets used to the doctor and comes back without fear."),
         [x("<b>Перший огляд</b> і знайомство з кабінетом", "<b>A first check-up</b> and a look around the room"),
@@ -643,7 +643,7 @@ def page_about(lang):
     values = [
         (x("Сімейна клініка", "A family clinic"), x("Клініку заснувала родина лікарів Придатко, і вона досі працює тут щодня. Багато пацієнтів приходять до нас усією сімʼєю роками.", "The Prydatko family of dentists founded the clinic and still works here every day. Many patients have come with their whole family for years.")),
         (x("Пояснюємо все", "We explain everything"), x("Перед лікуванням лікар пояснює, що і навіщо робитиме, а після радить, як доглядати за зубами.", "Before treatment the doctor explains what will be done and why, and afterwards tells you how to care for your teeth.")),
-        (x("Діти без страху", "Children without fear"), x("Дітей лікуємо з трьох років і не поспішаємо. Поки ви чекаєте, є ігри й мультики про Зубика.", "We treat children from age three and take our time. While you wait, there are games and cartoons about Zubyk the tooth.")),
+        (x("Діти без страху", "Children without fear"), x("Дітей лікуємо з трьох років і не поспішаємо. Поки ви чекаєте, є ігри й мультики про Зубчика.", "We treat children from age three and take our time. While you wait, there are games and cartoons about Zubchyk the tooth.")),
         (x("Усе в одній клініці", "Everything in one place"), x("Лікування, гігієна, естетика, ортодонтія, хірургія та імплантація. Вам не треба шукати різних лікарів по місту.", "Fillings, hygiene, aesthetics, orthodontics, surgery and implants. No need to look for different doctors around the city.")),
         (x("Зручний графік", "Convenient hours"), x("У будні працюємо до 20:00, у суботу до 15:00, тож на прийом можна прийти після роботи.", "We are open until 8 pm on weekdays and until 3 pm on Saturday, so you can come after work.")),
         (x("Велика команда", "A big team"), x("Лікарі, асистенти, медсестри й адміністратори, які знають пацієнтів на імʼя.", "Doctors, assistants, nurses and administrators who know patients by name.")),

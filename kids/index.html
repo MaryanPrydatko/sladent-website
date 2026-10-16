@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Зубики Sladent: ігри та мультики про зубки для дітей. Стань лікарем, нагодуй Зубика, розмальовки й пазли на пам'ять. Стоматологія Sladent, Тернопіль.">
+<meta name="description" content="Зубчики Sladent: ігри та мультики про зубки для дітей. Стань лікарем, нагодуй Зубчика, розмальовки й пазли на пам'ять. Стоматологія Sladent, Тернопіль.">
 <meta name="theme-color" content="#EAF2FB">
 <link rel="canonical" href="https://sladent.com/kids/">
 <link rel="manifest" href="manifest.webmanifest">
@@ -11,13 +11,13 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Зубики">
+<meta name="apple-mobile-web-app-title" content="Зубчики">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Зубики Sladent">
+<meta property="og:title" content="Зубчики Sladent">
 <meta property="og:description" content="Ігри та мультики про зубки для дітей від стоматології Sladent у Тернополі.">
 <meta property="og:url" content="https://sladent.com/kids/">
 <style>:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }</style>
-<title>Зубики Sladent</title>
+<title>Зубчики Sladent</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Nunito:wght@700;800;900&display=swap">
@@ -214,7 +214,7 @@
   .count { min-width: 26px; height: 26px; padding: 0 7px; border-radius: 999px; background: var(--sun); border: 2.5px solid var(--ink); display: inline-grid; place-items: center; font: 900 14px/1 var(--body); font-variant-numeric: tabular-nums; }
   @media (max-width: 700px) { #albumBtn { width: auto; padding: 0 8px; } }
   @media (max-width: 480px) { #fs { display: none; } .bar { gap: 8px; } .brand small { display: none; } }
-  @media (max-width: 440px) { .brand > div { display: none; } }   /* room for the home button: the Zubyk logo stays */
+  @media (max-width: 440px) { .brand > div { display: none; } }   /* room for the home button: the Zubchyk logo stays */
   .hudx { display: flex; gap: 8px; flex: none; }
   .hudx:empty { display: none; }
 
@@ -257,7 +257,7 @@
 <body>
 <div id="app">
   <header class="bar">
-    <div class="brand"><canvas id="logo" width="92" height="92" aria-hidden="true"></canvas><div><h1>Зубики</h1><small>ігри від Sladent</small></div></div>
+    <div class="brand"><canvas id="logo" width="92" height="92" aria-hidden="true"></canvas><div><h1>Зубчики</h1><small>ігри від Sladent</small></div></div>
     <a class="btn has-lbl" id="siteBtn" href="../" aria-label="Повернутися на сайт клініки Sladent"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 11.2 12 4l8.5 7.2M6 9.6V20h4.5v-5.5h3V20H18V9.6"/></svg><span class="lbl">На сайт</span></a>
     <button class="btn has-lbl" id="albumBtn" aria-label="Мої наліпки"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.7 5.8 6.3.7-4.7 4.3 1.3 6.2L12 16.7l-5.6 3.1 1.3-6.2L3 9.3l6.3-.7z" fill="#FFC83D" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="lbl">Наліпки</span><b class="count" id="albumN">0</b></button>
     <button class="btn has-lbl" id="chairBtn" title="Режим для екрана над кріслом"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12c3.2-4.6 9-5.6 12.8-2.6L21 6v12l-5.7-3.4C11.5 17.6 5.7 16.6 2.5 12z" fill="currentColor"/><circle cx="7.5" cy="11" r="1.3" fill="#fff"/></svg><span class="lbl">У кріслі</span></button>
@@ -267,14 +267,14 @@
 
   <main>
     <section id="home" class="screen">
-      <div class="hero"><canvas id="heroZ" width="240" height="240" aria-hidden="true"></canvas><div class="say"><b>Привіт! Я Зубик.</b><span>Обери гру, поки чекаєш на лікаря.</span></div></div>
+      <div class="hero"><canvas id="heroZ" width="240" height="240" aria-hidden="true"></canvas><div class="say"><b>Привіт! Я Зубчик.</b><span>Обери гру, поки чекаєш на лікаря.</span></div></div>
       <div class="tiles">
         <button class="tile k-dentist" data-go="dentist"><div class="art"><canvas data-icon="dentist" aria-hidden="true"></canvas></div><b>Стань лікарем</b><span>Полікуй зубки звірятам</span></button>
-        <button class="tile k-run" data-go="run"><div class="art"><canvas data-icon="run" aria-hidden="true"></canvas></div><b>Біг Зубика</b><span>Стрибай і збирай корисне</span></button>
+        <button class="tile k-run" data-go="run"><div class="art"><canvas data-icon="run" aria-hidden="true"></canvas></div><b>Біг Зубчика</b><span>Стрибай і збирай корисне</span></button>
         <button class="tile k-toons" data-go="toons"><div class="art"><canvas data-icon="toons" aria-hidden="true"></canvas></div><b>Мультики</b><span>6 мультиків про зубки</span></button>
         <button class="tile k-sing" data-go="sing"><div class="art"><canvas data-icon="sing" aria-hidden="true"></canvas></div><b>Співочі зубки</b><span>Грай мелодії і повторюй</span></button>
-        <button class="tile k-dress" data-go="dress"><div class="art"><canvas data-icon="dress" aria-hidden="true"></canvas></div><b>Одягни Зубика</b><span>Шапки, окуляри, плащі</span></button>
-        <button class="tile k-food" data-go="food"><div class="art"><canvas data-icon="food" aria-hidden="true"></canvas></div><b>Нагодуй Зубика</b><span>Тільки корисна їжа</span></button>
+        <button class="tile k-dress" data-go="dress"><div class="art"><canvas data-icon="dress" aria-hidden="true"></canvas></div><b>Одягни Зубчика</b><span>Шапки, окуляри, плащі</span></button>
+        <button class="tile k-food" data-go="food"><div class="art"><canvas data-icon="food" aria-hidden="true"></canvas></div><b>Нагодуй Зубчика</b><span>Тільки корисна їжа</span></button>
         <button class="tile k-puzzle" data-go="puzzle"><div class="art"><canvas data-icon="puzzle" aria-hidden="true"></canvas></div><b>Пазли</b><span>Склади картинку з мультика</span></button>
         <button class="tile k-color" data-go="color"><div class="art"><canvas data-icon="color" aria-hidden="true"></canvas></div><b>Малюємо</b><span>Розмальовки: обери колір</span></button>
         <button class="tile k-memory" data-go="memory"><div class="art"><canvas data-icon="memory" aria-hidden="true"></canvas></div><b>Знайди пару</b><span>Відкривай картки по дві</span></button>
@@ -400,7 +400,7 @@
   const GERM_COLS = ["#8BD35A", "#B48CF2", "#FF9F5A", "#5AC8E6", "#F06BA8"];
   function fillStroke(c, col, lw) { c.fillStyle = col; c.fill(); if (lw) c.lineWidth = lw; c.strokeStyle = INK; c.stroke(); }
 
-  // Зубик, the mascot. o: happy (-1..1), blink, squint, open, tilt, squash, look [x,y], arms ("wave" | "up" | "side" | "hold"), legs (walk phase), snorkel, t
+  // Зубчик, the mascot. o: happy (-1..1), blink, squint, open, tilt, squash, look [x,y], arms ("wave" | "up" | "side" | "hold"), legs (walk phase), snorkel, t
   function zubyk(c, x, y, s, o = {}) {
     c.save(); c.translate(x, y); if (o.tilt) c.rotate(o.tilt);
     const sq = o.squash || 0; c.scale(s * (1 + sq), s * (1 - sq));
@@ -636,7 +636,7 @@
   }
 
   // ---------------- outfits (dress-up and stickers) ----------------
-  // Drawn in Зубик's unit space: body spans x -0.47..0.47, y -0.61..0.62, eyes at y -0.18. Hand items are drawn relative to the right hand.
+  // Drawn in Зубчик's unit space: body spans x -0.47..0.47, y -0.61..0.62, eyes at y -0.18. Hand items are drawn relative to the right hand.
   function heart(c, x, y, r) { c.beginPath(); c.moveTo(x, y + r * 0.9); c.bezierCurveTo(x - r * 1.4, y - r * 0.2, x - r * 0.6, y - r * 1.2, x, y - r * 0.45); c.bezierCurveTo(x + r * 0.6, y - r * 1.2, x + r * 1.4, y - r * 0.2, x, y + r * 0.9); c.closePath(); }
   function glassesArms(c) { c.beginPath(); c.moveTo(-0.24, -0.2); c.lineTo(-0.4, -0.16); c.moveTo(0.24, -0.2); c.lineTo(0.4, -0.16); c.lineWidth = 0.03; c.strokeStyle = INK; c.stroke(); }
   function capeShape(c, col, t, deco) {
@@ -743,7 +743,7 @@
   };
   const OUTFIT_CATS = [["hat", "Шапки"], ["eyes", "Окуляри"], ["neck", "Прикраси"], ["cape", "Плащі"], ["hand", "У ручку"]];
   const outfitItem = (cat, id) => OUTFIT[cat] && OUTFIT[cat].find((i) => i.id === id);
-  // Зубик wearing an outfit: cape behind, then body, then neck, eyes, hat, and the held item with the hand drawn over it.
+  // Зубчик wearing an outfit: cape behind, then body, then neck, eyes, hat, and the held item with the hand drawn over it.
   function dressed(c, x, y, s, wear, o = {}) {
     const get = (cat) => wear && wear[cat] && outfitItem(cat, wear[cat]);
     const cape = get("cape"), hat = get("hat"), eyes = get("eyes"), neck = get("neck"), held = get("hand"), sq = o.squash || 0;
@@ -821,7 +821,7 @@
   function startAlbum() {
     endGame(); stopChair(); show("album"); halt(); $("over").hidden = true; const have = owned();
     $("apill").textContent = `${have.length} / ${STICKERS.length}`;
-    $("agrid").innerHTML = (have.length ? "" : `<p class="ahint">Грай в ігри: за кожну перемогу Зубик дарує наліпку.</p>`) +
+    $("agrid").innerHTML = (have.length ? "" : `<p class="ahint">Грай в ігри: за кожну перемогу Зубчик дарує наліпку.</p>`) +
       STICKERS.map((id, i) => (have.includes(id) ? `<div class="slot has" style="--r:${((i * 37) % 13) - 6}deg"><img alt="" src="${stickerURL(id)}"></div>` : `<div class="slot"><img alt="" data-ghost="${id}" src="${ghostURL(id)}"></div>`)).join("");
   }
 
@@ -1214,7 +1214,7 @@
     };
   }
 
-  // ---------------- 2. feed Зубик ----------------
+  // ---------------- 2. feed Зубчик ----------------
   function foodGame() {
     const GOOD = ["apple", "carrot", "broccoli", "cheese", "milk", "banana", "strawberry"], BAD = ["candy", "lollipop", "donut", "soda", "cupcake", "choco"], GOAL = 12;
     let items, flying, F, fed, miss, spawn, chomp, yuck, ended, blinkT;
@@ -1239,7 +1239,7 @@
         for (const f of flying) f.t += dt / 0.5;
         for (let i = flying.length - 1; i >= 0; i--) if (flying[i].t >= 1) {
           flying.splice(i, 1); fed++; chomp = 0.35; sfx.chomp(); F.burst(z.x, z.y - z.s * 0.05, "#7FD6B8", 12, 260, 6); F.word("Ням!", z.x + z.s * 0.5, z.y - z.s * 0.55, r * 0.7, "#7FD6B8"); hud();
-          if (fed >= GOAL && !ended) { ended = true; items = []; const st = miss === 0 ? 3 : miss <= 2 ? 2 : 1; setTimeout(() => { if (game && $("over").hidden) win("Зубик ситий і щасливий!", "Корисна їжа робить зубки міцними.", st, "Ще раз", null, award()); }, 900); }
+          if (fed >= GOAL && !ended) { ended = true; items = []; const st = miss === 0 ? 3 : miss <= 2 ? 2 : 1; setTimeout(() => { if (game && $("over").hidden) win("Зубчик ситий і щасливий!", "Корисна їжа робить зубки міцними.", st, "Ще раз", null, award()); }, 900); }
         }
         if (ended) return;
         spawn -= dt;
@@ -1300,7 +1300,7 @@
     };
   }
 
-  // ---------------- 6. Зубик's run ----------------
+  // ---------------- 6. Зубчик's run ----------------
   const APPLE_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2c2-2.1 7.4-1.6 7.4 4.6 0 5.6-4.2 9.4-5.9 8.8-.9-.3-2.1-.3-3 0-1.7.6-5.9-3.2-5.9-8.8 0-6.2 5.4-6.7 7.4-4.6z" fill="#E8414B" stroke="#0A2540" stroke-width="2" stroke-linejoin="round"/><path d="M12 7c0-2 .9-3.1 2.4-3.6" fill="none" stroke="#0A2540" stroke-width="2" stroke-linecap="round"/></svg>';
   // one outlined puff: stroke the union at double width, then fill it, so inner overlaps have no lines
   function cloud(c, x, y, r) {
@@ -1500,14 +1500,14 @@
     function photo() {
       const key = JSON.stringify(wear), n = Object.values(wear).filter(Boolean).length; flash = 1; noise(0.08, 0.09, 4200); tone(1400, 900, 0.08, "square", 0.03, 0.05);
       const z = Z();
-      if (n >= 2 && key !== lastPhoto) { lastPhoto = key; setTimeout(() => { if (game) win("Яке гарне фото!", "Зубик у новому образі. Зміни щось і сфотографуй ще.", 3, "Далі", null, award()); }, 700); }
+      if (n >= 2 && key !== lastPhoto) { lastPhoto = key; setTimeout(() => { if (game) win("Яке гарне фото!", "Зубчик у новому образі. Зміни щось і сфотографуй ще.", 3, "Далі", null, award()); }, 700); }
       else F.word(n < 2 ? "Одягни ще щось!" : "Спробуй новий образ!", z.x, z.y - z.s * 0.95, Math.min(W, H) * 0.06, "#FFC83D");
     }
     return {
       picker: true, noPill: true, tight: true,
       buildTray() { buildPicker(); },
       start() {
-        F = fx(); $("gtitle").textContent = "Обери, що вдягне Зубик";
+        F = fx(); $("gtitle").textContent = "Обери, що вдягне Зубчик";
         $("gextra").innerHTML = `<button class="btn has-lbl" id="dphoto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5h3.2l1.8-2.6h7l1.8 2.6h3.2v10.5h-17z"/><circle cx="12" cy="13.2" r="3.6"/></svg><span class="lbl">Фото</span></button><button class="btn icon" id="dreset" aria-label="Зняти все"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.6-5.7M4.5 3.8v4.6h4.6"/></svg></button>`;
         $("dphoto").addEventListener("click", () => { audio(); photo(); });
         $("dreset").addEventListener("click", () => { sfx.whoosh(); wear = {}; store.set("outfit", wear); pop = 1; buildPicker(); });
@@ -1728,7 +1728,7 @@
   const PALETTE = ["#E8414B", "#FF9F5A", "#FFC83D", "#8BD35A", "#2FA37C", "#5AC8E6", "#1956A8", "#B48CF2", "#F06BA8", "#A0673E", "#0A2540", "#FFFFFF"];
   let paint = store.get("paint", "#5AC8E6"), pageI = 0;
   const PAGES = [
-    { name: "Зубик", svg: () => `
+    { name: "Зубчик", svg: () => `
       <rect class="r bgr" x="-900" y="-900" width="2400" height="2400"/>
       <g class="d" stroke="#0A2540" stroke-width="5" stroke-linecap="round">${Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * TAU; return `<line x1="${(505 + Math.cos(a) * 66).toFixed(0)}" y1="${(92 + Math.sin(a) * 66).toFixed(0)}" x2="${(505 + Math.cos(a) * 90).toFixed(0)}" y2="${(92 + Math.sin(a) * 90).toFixed(0)}"/>`; }).join("")}</g>
       <circle class="r" cx="505" cy="92" r="50"/>
@@ -1801,12 +1801,12 @@
 
   // ---------------- 6. cartoons ----------------
   const VIDEOS = [
-    { id: "hero", title: "Зубик-супергерой", sub: "Рятує Зубоград від Карієса", src: "videos/hero-720.mp4", poster: "videos/hero-poster.jpg" },
-    { id: "fairy", title: "Зубна фея", sub: "Куди зникає молочний зубик", src: "videos/fairy-720.mp4", poster: "videos/fairy-poster.jpg" },
-    { id: "brush", title: "Чистимо зубки разом", sub: "2 хвилини: чисть зубки разом із Зубиком", src: "videos/brush-720.mp4", poster: "videos/brush-poster.jpg" },
+    { id: "hero", title: "Зубчик-супергерой", sub: "Рятує Зубоград від Карієса", src: "videos/hero-720.mp4", poster: "videos/hero-poster.jpg" },
+    { id: "fairy", title: "Зубна фея", sub: "Куди зникає молочний зубчик", src: "videos/fairy-720.mp4", poster: "videos/fairy-poster.jpg" },
+    { id: "brush", title: "Чистимо зубки разом", sub: "2 хвилини: чисть зубки разом із Зубчиком", src: "videos/brush-720.mp4", poster: "videos/brush-poster.jpg" },
     { id: "night", title: "Нічна вечірка мікробів", sub: "Чому чистимо зубки перед сном", src: "videos/night-720.mp4", poster: "videos/night-poster.jpg" },
-    { id: "food", title: "Друзі зубиків", sub: "Корисне щодня, солодке іноді", src: "videos/food-720.mp4", poster: "videos/food-poster.jpg" },
-    { id: "visit", title: "Зубик іде до лікаря", sub: "Що буде на першому прийомі", src: "videos/visit-720.mp4", poster: "videos/visit-poster.jpg" },
+    { id: "food", title: "Друзі зубчиків", sub: "Корисне щодня, солодке іноді", src: "videos/food-720.mp4", poster: "videos/food-poster.jpg" },
+    { id: "visit", title: "Зубчик іде до лікаря", sub: "Що буде на першому прийомі", src: "videos/visit-720.mp4", poster: "videos/visit-poster.jpg" },
   ];
   const vid = $("vid");
   function stopVideo() { try { vid.pause(); } catch (e) { /* ignore */ } vid.removeAttribute("src"); vid.load(); $("player").hidden = true; $("vlist").hidden = false; $("ttitle").textContent = "Мультики"; }
@@ -1828,7 +1828,7 @@
   // ---------------- chair mode ----------------
   const chair = $("chair"), sea = $("sea"), sctx = sea.getContext("2d");
   let wake = null, fish = [], sbubs = [], jelly = [];
-  const PROMPTS = ["Знайди жовту рибку!", "Скільки рожевих рибок?", "Дихаємо повільно разом із бульбашкою", "Зубик махає тобі!", "Ти молодець!", "Знайди найменшу рибку!", "Порахуй медуз", "Покажи, як рибка відкриває ротик"];
+  const PROMPTS = ["Знайди жовту рибку!", "Скільки рожевих рибок?", "Дихаємо повільно разом із бульбашкою", "Зубчик махає тобі!", "Ти молодець!", "Знайди найменшу рибку!", "Порахуй медуз", "Покажи, як рибка відкриває ротик"];
   function fishArt(c, s, col, t, ph) {
     c.lineWidth = Math.max(2, s * 0.06); c.strokeStyle = INK; c.lineJoin = "round";
     const wag = Math.sin(t * 6 + ph) * s * 0.06;
